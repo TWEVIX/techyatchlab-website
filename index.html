@@ -3,38 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechYatch Lab™ | Interactive Data Science &amp; Business Simulation Sandbox</title>
+  <title>TechYatch Lab™ | Proprietary Data Science &amp; AI Simulation Platform</title>
   <link rel="icon" type="image/png" href="logo.png" />
-  <meta name="description" content="TechYatch Lab™ turns complex data analytics into hands-on browser simulations with SHA-256 verified competency credentials." />
+  <meta name="description" content="TechYatch Lab™ replaces passive video courses with browser-based Python & Streamlit operational simulations and SHA-256 verified competency credentials." />
   <style>
     :root {
-      --teal-dark: #0f766e;
-      --teal-main: #0d9488;
-      --teal-bright: #14b8a6;
-      --teal-soft: #f0fdfa;
-      --amber-main: #f59e0b;
+      --bg-midnight: #061423;
+      --bg-navy-card: #0c1f35;
+      --bg-navy-elevated: #112945;
+      --emerald-bright: #10b981;
+      --emerald-glow: #34d399;
+      --emerald-dark: #059669;
+      --teal-logo: #0d9488;
+      --amber-gold: #f59e0b;
       --amber-dark: #d97706;
-      --amber-soft: #fffbeb;
-      --navy: #0f172a;
-      --slate: #334155;
-      --muted: #64748b;
-      --border: #ccfbf1;
+      --text-white: #f8fafc;
+      --text-slate: #cbd5e1;
+      --text-muted: #94a3b8;
+      --border-glow: rgba(16, 185, 129, 0.25);
+      --border-subtle: rgba(255, 255, 255, 0.1);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-      color: var(--navy);
-      background: #ffffff;
+      background-color: var(--bg-midnight);
+      color: var(--text-white);
       line-height: 1.6;
     }
     a { text-decoration: none; color: inherit; }
 
     /* Navigation */
     header {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 2px solid var(--teal-soft);
-      padding: 0.9rem 5%;
+      background: rgba(6, 20, 35, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.95rem 5%;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -47,39 +50,40 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.8rem;
     }
     .brand img {
       height: 46px;
       width: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(13, 148, 136, 0.18);
+      border: 1.5px solid var(--emerald-bright);
+      background: #ffffff;
     }
     .brand-name {
       font-size: 1.3rem;
       font-weight: 800;
-      color: var(--navy);
+      color: var(--text-white);
       letter-spacing: -0.02em;
     }
-    .brand-name span { color: var(--teal-main); }
-    .brand-tag { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
+    .brand-name span { color: var(--emerald-glow); }
+    .brand-tag { font-size: 0.78rem; color: var(--text-muted); }
 
     nav { display: flex; gap: 1.5rem; align-items: center; font-size: 0.92rem; font-weight: 600; }
-    nav a { color: var(--slate); transition: color 0.2s; }
-    nav a:hover { color: var(--teal-main); }
+    nav a { color: var(--text-slate); transition: color 0.2s; }
+    nav a:hover { color: var(--emerald-glow); }
     .nav-btn {
-      background: linear-gradient(135deg, var(--teal-main), var(--teal-dark));
+      background: linear-gradient(135deg, var(--emerald-bright), var(--teal-logo));
       color: #ffffff !important;
       padding: 0.6rem 1.2rem;
       border-radius: 999px;
-      box-shadow: 0 4px 14px rgba(13, 148, 136, 0.28);
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
     }
 
-    /* Vibrant Nautical Hero */
+    /* Midnight Navy & Emerald Hero */
     .hero {
-      background: radial-gradient(circle at top right, #ccfbf1 0%, #f0fdfa 45%, #fffbeb 100%);
-      padding: 4.5rem 5% 5rem;
-      border-bottom: 1px solid #99f6e4;
+      background: radial-gradient(circle at top right, rgba(13, 148, 136, 0.25) 0%, var(--bg-midnight) 55%);
+      padding: 4.75rem 5% 5rem;
+      border-bottom: 1px solid var(--border-subtle);
     }
     .hero-grid {
       max-width: 1180px;
@@ -89,97 +93,100 @@
       gap: 3rem;
       align-items: center;
     }
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: #ffffff;
-      border: 1.5px solid #5eead4;
-      color: var(--teal-dark);
-      padding: 0.35rem 0.95rem;
+    .kicker {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid var(--border-glow);
+      color: var(--emerald-glow);
+      padding: 0.35rem 1rem;
       border-radius: 999px;
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      margin-bottom: 1.1rem;
-      box-shadow: 0 2px 8px rgba(13, 148, 136, 0.08);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
     }
     .hero h1 {
-      font-size: clamp(2.1rem, 4vw, 3.15rem);
+      font-size: clamp(2.1rem, 4.1vw, 3.2rem);
       font-weight: 850;
-      line-height: 1.14;
-      color: var(--navy);
-      margin-bottom: 1.15rem;
+      line-height: 1.15;
+      color: var(--text-white);
+      margin-bottom: 1.2rem;
     }
-    .hero h1 mark {
-      background: linear-gradient(120deg, rgba(245, 158, 11, 0.28) 0%, rgba(20, 184, 166, 0.28) 100%);
-      color: var(--teal-dark);
-      padding: 0 0.35rem;
-      border-radius: 0.35rem;
+    .hero h1 span {
+      color: var(--emerald-glow);
+      display: block;
     }
     .hero p {
-      font-size: 1.1rem;
-      color: var(--slate);
-      margin-bottom: 2rem;
+      font-size: 1.08rem;
+      color: var(--text-slate);
+      margin-bottom: 2.1rem;
     }
     .cta-group { display: flex; gap: 0.9rem; flex-wrap: wrap; }
     .btn {
       padding: 0.9rem 1.55rem;
-      border-radius: 0.65rem;
+      border-radius: 0.6rem;
       font-weight: 700;
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
       transition: all 0.2s ease;
     }
     .btn:hover { transform: translateY(-2px); }
-    .btn-teal {
-      background: linear-gradient(135deg, var(--teal-main), var(--teal-dark));
+    .btn-emerald {
+      background: linear-gradient(135deg, var(--emerald-bright), var(--emerald-dark));
       color: #ffffff;
-      box-shadow: 0 8px 20px rgba(13, 148, 136, 0.28);
+      box-shadow: 0 8px 22px rgba(16, 185, 129, 0.32);
     }
     .btn-amber {
-      background: linear-gradient(135deg, var(--amber-main), var(--amber-dark));
-      color: #ffffff;
-      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.28);
+      background: linear-gradient(135deg, var(--amber-gold), var(--amber-dark));
+      color: #061423;
+      box-shadow: 0 8px 22px rgba(245, 158, 11, 0.28);
     }
-    .btn-white {
-      background: #ffffff;
-      color: var(--navy);
-      border: 1.5px solid #cbd5e1;
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-white);
+      border: 1px solid var(--border-subtle);
     }
+    .btn-outline:hover { background: rgba(255, 255, 255, 0.1); }
 
-    /* Interactive Mini-Sandbox Card in Hero */
+    /* Interactive Mini-Sandbox Card */
     .sandbox-preview {
-      background: #ffffff;
-      border: 2px solid #5eead4;
+      background: var(--bg-navy-card);
+      border: 1.5px solid var(--border-glow);
       border-radius: 1.25rem;
       padding: 2rem;
-      box-shadow: 0 20px 45px rgba(15, 118, 110, 0.14);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
     }
     .preview-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.2rem;
       padding-bottom: 1rem;
-      border-bottom: 1px dashed #cbd5e1;
+      border-bottom: 1px solid var(--border-subtle);
     }
-    .preview-top img { height: 68px; border-radius: 12px; }
+    .preview-top img {
+      height: 68px;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 3px;
+    }
     .live-dot {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      background: var(--teal-soft);
-      color: var(--teal-dark);
+      background: rgba(16, 185, 129, 0.14);
+      color: var(--emerald-glow);
       font-size: 0.78rem;
       font-weight: 700;
       padding: 0.3rem 0.75rem;
       border-radius: 999px;
     }
     .slider-box {
-      background: var(--amber-soft);
-      border: 1px solid #fde68a;
+      background: var(--bg-navy-elevated);
+      border: 1px solid rgba(245, 158, 11, 0.3);
       border-radius: 0.85rem;
       padding: 1.15rem;
       margin: 1rem 0;
@@ -189,12 +196,12 @@
       justify-content: space-between;
       font-weight: 700;
       font-size: 0.92rem;
-      color: var(--navy);
-      margin-bottom: 0.5rem;
+      color: var(--text-white);
+      margin-bottom: 0.55rem;
     }
     input[type="range"] {
       width: 100%;
-      accent-color: var(--teal-main);
+      accent-color: var(--amber-gold);
       cursor: pointer;
     }
     .kpi-row {
@@ -204,19 +211,20 @@
       margin-top: 1rem;
     }
     .kpi {
-      background: var(--teal-soft);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid var(--border-glow);
       border-radius: 0.75rem;
-      padding: 0.85rem;
+      padding: 0.9rem;
       text-align: center;
     }
-    .kpi span { display: block; font-size: 0.78rem; color: var(--slate); font-weight: 600; }
-    .kpi strong { font-size: 1.35rem; color: var(--teal-dark); }
+    .kpi span { display: block; font-size: 0.78rem; color: var(--text-slate); font-weight: 600; }
+    .kpi strong { font-size: 1.4rem; color: var(--emerald-glow); }
 
     /* Sections */
     .section { max-width: 1180px; margin: 0 auto; padding: 4.5rem 5%; }
-    .section-head { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+    .section-head { text-align: center; max-width: 740px; margin: 0 auto 3rem; }
     .section-head h2 { font-size: 2.15rem; font-weight: 850; margin-bottom: 0.65rem; }
-    .section-head p { color: var(--slate); font-size: 1.05rem; }
+    .section-head p { color: var(--text-slate); font-size: 1.05rem; }
 
     /* 5 Simulations Grid */
     .cases-grid {
@@ -225,49 +233,52 @@
       gap: 1.5rem;
     }
     .case-card {
-      border: 1.5px solid #e2e8f0;
+      background: var(--bg-navy-card);
+      border: 1px solid var(--border-subtle);
       border-radius: 1rem;
-      padding: 1.65rem;
-      background: #ffffff;
+      padding: 1.75rem;
       transition: all 0.2s ease;
     }
     .case-card:hover {
-      border-color: var(--teal-bright);
-      box-shadow: 0 12px 28px rgba(13, 148, 136, 0.1);
+      border-color: var(--emerald-bright);
       transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(16, 185, 129, 0.12);
     }
     .tag-free {
       display: inline-block;
-      background: #dcfce7;
-      color: #166534;
-      font-size: 0.75rem;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--emerald-glow);
+      border: 1px solid var(--border-glow);
+      font-size: 0.74rem;
       font-weight: 800;
-      padding: 0.2rem 0.65rem;
+      padding: 0.22rem 0.7rem;
       border-radius: 999px;
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.75rem;
     }
     .tag-pro {
       display: inline-block;
-      background: #fef3c7;
-      color: #92400e;
-      font-size: 0.75rem;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--amber-gold);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      font-size: 0.74rem;
       font-weight: 800;
-      padding: 0.2rem 0.65rem;
+      padding: 0.22rem 0.7rem;
       border-radius: 999px;
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.75rem;
     }
-    .case-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-    .case-card p { font-size: 0.93rem; color: var(--slate); }
+    .case-card h3 { font-size: 1.22rem; margin-bottom: 0.5rem; color: var(--text-white); }
+    .case-card p { font-size: 0.94rem; color: var(--text-slate); }
 
     /* Footer */
     footer {
-      background: var(--navy);
-      color: #cbd5e1;
+      background: #030b14;
+      border-top: 1px solid var(--border-subtle);
+      color: var(--text-muted);
       padding: 2.75rem 5%;
       text-align: center;
       font-size: 0.9rem;
     }
-    footer a { color: #5eead4; font-weight: 600; }
+    footer a { color: var(--emerald-glow); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -277,41 +288,26 @@
       <img src="logo.png" alt="TechYatch Lab Mascot Logo" />
       <div>
         <div class="brand-name">TechYatch <span>Lab™</span></div>
-        <div class="brand-tag">Incubated by <a href="https://twevix.com" style="color:var(--teal-dark); font-weight:700;">Twevix™</a></div>
+        <div class="brand-tag">Incubated by <a href="https://twevix.com" style="color:var(--emerald-glow); font-weight:700;">Twevix™</a> | Applied Analytics &amp; AI</div>
       </div>
     </div>
     <nav>
       <a href="#simulations">5 Live Simulations</a>
       <a href="https://twevix.com#publications">Book Trilogy</a>
-      <a href="https://github.com" target="_blank">GitHub Code</a>
-      <a href="https://streamlit.app" target="_blank" class="nav-btn">Launch Sandbox →</a>
+      <a href="https://github.com" target="_blank">GitHub Repo</a>
+      <a href="https://streamlit.app" target="_blank" class="nav-btn">Python Sandbox →</a>
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero-grid">
       <div>
-        <div class="pill">🐾 Data Analytics Simplified to a Toddler</div>
-        <h1>Turn Complex Numbers Into <mark>Hands-On Decisions</mark></h1>
+        <div class="kicker">Proprietary EdTech &amp; Analytics Simulation Engine</div>
+        <h1>
+          Automated Data Science Sandboxes &amp;
+          <span>Verified Competency Telemetry</span>
+        </h1>
         <p>
-          TechYatch Lab™ replaces boring video lectures with interactive Python &amp; Streamlit operational sandboxes—so students, analysts, and SME owners can test pricing, churn, mobile funnels, and clinic queues before writing a single line of code.
+          TechYatch Lab™ replaces passive video courses with browser-based Python &amp; Streamlit operational simulations—enabling emerging analysts, students, and SME leaders to stress-test business models, scrub live datasets, and export SHA-256 verified problem-solving portfolios for UK and global employers.
         </p>
         <div class="cta-group">
-          <a href="https://streamlit.app" target="_blank" class="btn btn-teal">🚀 Try Cases 1–3 Free</a>
-          <a href="https://flutterwave.com" target="_blank" class="btn btn-amber">💳 Unlock Pro + Credential ($25)</a>
-          <a href="https://twevix.com" class="btn btn-white">⚡ Twevix™ Parent Hub</a>
-        </div>
-      </div>
-
-      <!-- Mini Live Interactive Preview Widget -->
-      <div class="sandbox-preview">
-        <div class="preview-top">
-          <div>
-            <div style="font-weight:800; font-size:1.05rem; color:var(--navy);">Interactive Mini-Lab Preview</div>
-            <div style="font-size:0.84rem; color:var(--muted);">Case 1: Martha's Bakery Profit vs. Volume</div>
-          </div>
-          <img src="logo.png" alt="TechYatch Lab Mascot" />
-        </div>
-        <div class="live-dot">● Live Interactive Slider — Drag to Test!</div>
-
-        <div class="slider-box">
