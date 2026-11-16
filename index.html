@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechYatch Lab™ | Proprietary Data Science &amp; AI Simulation Platform</title>
+  <link rel="icon" type="image/png" href="https://twevix.com" />
+  <meta name="description" content="TechYatch Lab™ replaces passive video courses with browser-based Python & Streamlit operational simulations and SHA-256 verified competency credentials." />
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --bg-surface: #111827;
+      --bg-card: #161f33;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #0ea5e9;
+      --primary-hover: #0284c7;
+      --accent: #10b981;
+      --pro: #ef4444;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Top Bar */
+    header {
+      padding: 1.1rem 5%;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: rgba(9, 13, 22, 0.92);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand-group { display: flex; align-items: center; gap: 0.75rem; }
+    .brand-title { font-weight: 800; font-size: 1.25rem; letter-spacing: -0.02em; }
+    .brand-sub { font-size: 0.8rem; color: var(--text-muted); }
+    nav { display: flex; gap: 1.4rem; align-items: center; font-size: 0.9rem; font-weight: 500; }
+    nav a { color: var(--text-muted); transition: color 0.2s; }
+    nav a:hover { color: var(--text-main); }
+    .nav-cta {
+      background: var(--primary);
+      color: #ffffff !important;
+      padding: 0.5rem 1rem;
+      border-radius: 0.45rem;
+      font-weight: 600;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 5rem 5% 4rem;
+      text-align: center;
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 4.2vw, 3.3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 880px;
+      margin: 0 auto 1.25rem;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.12rem;
+      max-width: 740px;
+      margin: 0 auto 2.25rem;
+    }
+    .cta-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      padding: 0.85rem 1.55rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 0.98rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .btn-pro { background: var(--pro); color: #fff; }
+    .btn-outline { border: 1px solid var(--border); background: var(--bg-surface); color: var(--text-main); }
+
+    /* Metrics Strip */
+    .metrics {
+      max-width: 1120px;
+      margin: 0 auto 4.5rem;
+      padding: 0 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .metric-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.4rem;
+    }
+    .metric-card h3 { font-size: 1.15rem; color: #38bdf8; margin-bottom: 0.3rem; }
+    .metric-card p { font-size: 0.9rem; color: var(--text-muted); }
+
+    /* Differentiation Section */
+    .section { max-width: 1120px; margin: 0 auto; padding: 3.5rem 5% 5rem; }
+    .sec-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .section h2 { font-size: 2.1rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .section .lead { color: var(--text-muted); max-width: 720px; margin-bottom: 2.75rem; font-size: 1.05rem; }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.75rem;
+    }
+    .pillar {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 0.9rem;
+      padding: 1.85rem;
+    }
+    .pillar-num { font-size: 0.78rem; font-weight: 700; color: #38bdf8; letter-spacing: 0.06em; margin-bottom: 0.65rem; }
+    .pillar h3 { font-size: 1.28rem; margin-bottom: 0.65rem; }
+    .pillar p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.25rem 5%;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    footer a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-group">
+      <div>
+        <div class="brand-title">🕵️ TechYatch Lab™</div>
+        <div class="brand-sub">Incubated by <a href="https://twevix.com" style="color:#38bdf8;">Twevix™</a> | Applied Analytics &amp; AI</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#architecture">Platform Architecture</a>
+      <a href="https://github.com" target="_blank">GitHub Repo</a>
+      <a href="https://twevix.com">Twevix™ Ecosystem</a>
+      <a href="https://streamlit.app" target="_blank" class="nav-cta">Python Sandbox →</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Proprietary EdTech &amp; Analytics Simulation Engine</div>
+    <h1>Automated Data Science Sandboxes &amp; Verified Competency Telemetry</h1>
+    <p>
+      TechYatch Lab™ replaces passive video courses with browser-based Python &amp; Streamlit operational simulations—enabling emerging analysts, students, and SME leaders to stress-test business models, scrub live datasets, and export SHA-256 verified problem-solving credentials for UK and global employers.
+    </p>
+    <div class="cta-row">
+      <a href="https://streamlit.app" target="_blank" class="btn btn-primary">🚀 Open Live Streamlit App (Cases 1–3 Free)</a>
+      <a href="https://flutterwave.com" target="_blank" class="btn btn-pro">💳 Unlock Full Sandbox &amp; Credential ($25)</a>
+      <a href="https://twevix.com#publications" class="btn btn-outline">📘 Companion Book Trilogy</a>
+    </div>
+  </section>
+
+  <div class="metrics">
+    <div class="metric-card">
+      <h3>Python + Streamlit</h3>
+      <p>Browser-Native Interactive Simulation Engine</p>
+    </div>
+    <div class="metric-card">
+      <h3>5 Live Simulations</h3>
+      <p>Unit Economics, Churn, Revenue, Mobile Funnels &amp; Clinical Queues</p>
+    </div>
+    <div class="metric-card">
+      <h3>SHA-256 Scoring</h3>
+      <p>Telemetry-Backed Auto-Grader &amp; Verified Credential IDs</p>
+    </div>
+    <div class="metric-card">
+      <h3>UK &amp; East Africa</h3>
+      <p>Cross-Border Talent, SME &amp; University Validation</p>
+    </div>
+  </div>
+
+  <section id="architecture" class="section">
+    <div class="sec-tag">Core Technology &amp; Differentiation</div>
+    <h2>Why TechYatch Lab™ Is Built Differently</h2>
+    <p class="lead">
+      Traditional analytics education relies on static multiple-choice quizzes or unguided notebooks. TechYatch Lab™ introduces a structured, low-friction simulation layer that measures how an analyst thinks under real operational constraints.
+    </p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-num">01 / SIMULATION ENGINE</div>
+        <h3>Interactive Operational Sandboxes</h3>
+        <p>
+          Users manipulate live business levers—unit economics, retention thresholds, mobile checkout recovery, and clinical staffing capacity—inside custom Python/Streamlit modules to observe real-time mathematical outcomes before writing complex code.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-num">02 / TELEMETRY &amp; VERIFICATION</div>
+        <h3>Auditable Competency Profiles</h3>
+        <p>
+          Every sandbox run connects to an automated Python evaluation pipeline that verifies exact quantitative decisions, generating standardized SHA-256 performance credentials that eliminate resume inflation for hiring teams.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-num">03 / SCALABLE SAAS ARCHITECTURE</div>
+        <h3>Zero-Setup Cloud Delivery</h3>
+        <p>
+          Engineered with automated API payment verification, institutional cohort licensing keys, and continuous cloud deployment—allowing individuals, universities, and SMEs to onboard in seconds with zero local installation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2026 <strong>TechYatch Lab™</strong> — Incubated by <a href="https://twevix.com">Twevix™</a> |
+      <a href="https://streamlit.app" target="_blank">Launch Live App</a> •
+      <a href="https://streamlit.app" target="_blank">TWEVIX CARE™ HealthTech</a> •
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
