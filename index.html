@@ -139,7 +139,7 @@ function claimGift(e) {
   document.getElementById("welcomeName").textContent = name;
   document.getElementById("unlockedBox").style.display = "block";
 
-  if (WEBHOOK_URL && !WEBHOOK_URL.includes("YOUR_GOOGLE_APPS_SCRIPT_URL")) {
+  if (WEBHOOK_URL && !WEBHOOK_URL.includes("https://script.google.com/macros/s/AKfycbyxRtRvqaBXsmFlzHWvH4yE3xxSb6kGpx1yUtIBBujztg-0lZxj0uLf2X_Ou9ny5yOc-A/exec")) {
     fetch(WEBHOOK_URL, {
       method: "POST",
       mode: "no-cors",
