@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TechYatch Lab™ | Business Analytics Automation &amp; AI Simulation Sandbox</title>
+<title>TechYatch Lab™ | Decision Intelligence Suite &amp; Diagnostic OS™</title>
 <link rel="icon" type="image/png" href="logo.png" />
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -14,11 +14,10 @@ a{text-decoration:none;color:inherit}
 header{border-bottom:1px solid #1e293b;background:rgba(2,6,23,.95);position:sticky;top:0;z-index:50}
 .nav{max-width:960px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
-.brand img{width:42px;height:42px;border-radius:10px;object-fit:cover;border:1.5px solid #34d399;background:#fff}
+.brand img{width:42px;height:42px;border-radius:10px;object-fit:contain;border:1.5px solid #34d399;background:transparent}
 .mint{color:#34d399}
-.amber{color:#fbbf24}
 .sub{font-size:11px;font-weight:500;color:#94a3b8;letter-spacing:.5px}
-.links{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;color:#cbd5e1;flex-wrap:wrap}
+.links{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;color:#cbd5e1}
 .links a:hover{color:#34d399}
 .pill-cta{background:#10b981;color:#020617!important;font-weight:700;padding:8px 18px;border-radius:999px}
 main{max-width:960px;margin:0 auto;padding:44px 24px}
@@ -66,34 +65,33 @@ footer a{color:#34d399;font-weight:600}
       <img src="logo.png" alt="TechYatch Lab Logo" />
       <div>
         <div>TechYatch <span class="mint">Lab™</span></div>
-        <div class="sub">DATA SCIENCE & ANALYTICS • DECISION INTELLIGENCE • SANDBOXES</div>
+        <div class="sub">DECISION INTELLIGENCE • DIAGNOSTIC OS™ • SANDBOXES</div>
       </div>
     </div>
     <div class="links">
       <a href="#solutions">Solutions</a>
       <a href="#starter-kit">Free Kit</a>
-      <a href="https://techyatch-lab.streamlit.app/" target="_blank" class="pill-cta">Launch Lab →</a>
+      <a href="https://streamlit.app" target="_blank" class="pill-cta">Diagnostic OS →</a>
     </div>
-
   </div>
 </header>
 
 <main>
   <section class="hero">
-    <div class="badge">Applied Data Science • Business Decision Intelligence</div>
+    <div class="badge">Proprietary Decision Intelligence Suite • Scalable SaaS</div>
     <h1>Turn Business Numbers Into <span class="mint">Clear, Profitable Decisions</span></h1>
-    <p class="lead"><strong>TechYatch Lab™</strong> helps SMEs, founders, and emerging analysts uncover hidden profit leaks, reduce customer churn, and test operational decisions inside browser-based Python &amp; Streamlit sandboxes.</p>
+    <p class="lead"><strong>TechYatch Lab™</strong> equips SMEs, founders, and analytics teams with automated diagnostic engines to eliminate profit leaks, prevent customer churn, and scale sustainably.</p>
 
     <div class="strip">
       <div class="strip-card">
-        <div style="font-size:26px;margin-bottom:6px;">🕵️</div>
-        <div style="font-size:13px;font-weight:700;color:#34d399;">Unit Economics &amp; Margin</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Fix High-Volume Profit Leaks</div>
+        <div style="font-size:26px;margin-bottom:6px;">🔍</div>
+        <div style="font-size:13px;font-weight:700;color:#34d399;">Problem Discovery</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Automated Margin &amp; Waste Scan</div>
       </div>
       <div class="strip-card">
-        <div style="font-size:26px;margin-bottom:6px;">📈</div>
-        <div style="font-size:13px;font-weight:700;color:#fbbf24;">Churn &amp; Funnel Audits</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Retention &amp; Checkout Recovery</div>
+        <div style="font-size:26px;margin-bottom:6px;">🔄</div>
+        <div style="font-size:13px;font-weight:700;color:#fbbf24;">RFM Churn Engine</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">High-Value Cohort Retention</div>
       </div>
       <div class="strip-card">
         <div style="font-size:26px;margin-bottom:6px;">🎓</div>
@@ -103,60 +101,17 @@ footer a{color:#34d399;font-weight:600}
     </div>
 
     <div class="tabs">
-      <button onclick="setMode('biz')" id="btn-biz" class="tab tab-biz active">📊 Business Analytics & Diagnostics</button>
-      <button onclick="setMode('lab')" id="btn-lab" class="tab tab-lab">🕵️ Interactive Simulation Lab</button>
+      <button onclick="setMode('biz')" id="btn-biz" class="tab tab-biz active">📊 TechYatch Diagnostic OS™</button>
+      <button onclick="setMode('lab')" id="btn-lab" class="tab tab-lab">🕵️ 5-Case Simulation Lab</button>
       <button onclick="setMode('trn')" id="btn-trn" class="tab tab-trn">📘 Book Series 1 &amp; Starter Kit</button>
     </div>
 
     <div class="box box-hi">
       <div class="box-text">
-        <div id="box-tag" class="tag t-em">01 • SME &amp; Commercial Analytics</div>
-        <h2 id="box-title">Profitability, Funnel &amp; Churn Diagnostic Infrastructure</h2>
-        <p id="box-desc">Identify why revenue growth isn't translating into net profit—diagnosing mobile checkout drop-offs, customer churn cohorts, and seasonal demand bottlenecks with actionable Python models.</p>
+        <div id="box-tag" class="tag t-em">01 • Automated Decision Intelligence</div>
+        <h2 id="box-title">TechYatch Diagnostic OS™: 4-Stage Business Scanner</h2>
+        <p id="box-desc">Upload raw operational and customer CSVs to automatically discover profit bottlenecks, generate a 90-day solution blueprint, model 1x–5x sustainable scaling, and score RFM churn cohorts.</p>
       </div>
-      <a id="box-link" href="mailto:datadetective@://techyatchlab.com" class="btn btn-em">Book Advisory →</a>
+      <a id="box-link" href="https://streamlit.app" target="_blank" class="btn btn-em">Launch Diagnostic OS →</a>
     </div>
   </section>
-
-  <!-- Email Capture Funnel: Series 1 Free Reader Starter Kit -->
-  <section id="starter-kit" class="box box-gift">
-    <div style="width:100%;">
-       <div style="width:100%;">
-      <span class="tag t-am">🎁 Free Series 1 Reader Gift • Instant Access</span>
-      <h3>Claim Your Free "Data Detective Starter Kit"</h3>
-      <p>Reading <em>Simplifying Data Analytics to a Toddler (Series 1: How to Be a Data Analyst)</em> or starting your analytics journey? Enter your details below to unlock your free companion bundle:</p>
-      <div class="gift-list">
-        ✅ <strong>Free Interactive Sandbox Access:</strong> Test Cases 1–3 live in your browser (Martha's Bakery, FitLife Gym &amp; Bean &amp; Brew)<br/>
-        ✅ <strong>Clean Practice CSV Datasets:</strong> Downloadable retail, churn, and sales spreadsheets to practice alongside the book<br/>
-        ✅ <strong>1-Page Profit &amp; KPI Cheat Sheet:</strong> Plain-English formulas for Unit Margin, Cohort Churn &amp; Funnel Conversion
-      </div>
-      <form class="funnel-form" onsubmit="claimGift(event)">
-        <input type="text" id="leadName" class="funnel-input" placeholder="Your First Name" required />
-        <input type="email" id="leadEmail" class="funnel-input" placeholder="Your Best Email Address" required />
-        <button type="submit" class="btn btn-am">🎁 Unlock Free Starter Kit →</button>
-      </form>
-
-     
-
-
-
-   
-  
-       
-      </form>
-      <div id="unlockedBox" class="unlocked">
-        <strong>🎉 Welcome, <span id="welcomeName">Data Detective</span>! Your Starter Kit is ready:</strong><br/>
-        1. <a href="https://techyatch-lab.streamlit.app/" target="_blank" style="text-decoration:underline;font-weight:700;">Launch Free Interactive Sandbox (Cases 1–3) →</a><br/>
-        2. <a href="mailto:datadetective@://techyatchlab.com" style="text-decoration:underline;font-weight:700;">Click here to have the CSV Datasets &amp; KPI Cheat Sheet emailed directly to you →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stacked Service Boxes -->
-  <section id="solutions">
-    <div id="solutions" class="box">
-      <div class="box-text">
-        <span class="tag t-em">02 • Automated Analytics Diagnostics</span>
-        <h3>📊 SME Revenue, Margin &amp; Retention Audits</h3>
-        <p>Custom data diagnostics for retail, e-commerce, and growing businesses—pinpointing low-margin product traps, mobile checkout friction, and high-value customer retention levers.</p>
-      </div>
