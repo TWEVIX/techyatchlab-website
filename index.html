@@ -115,3 +115,135 @@ footer a{color:#34d399;font-weight:600}
       <a id="box-link" href="https://streamlit.app" target="_blank" class="btn btn-em">Launch Diagnostic OS →</a>
     </div>
   </section>
+    <!-- Email Capture Funnel & Product Solution Boxes -->
+  <section id="starter-kit" class="box box-gift">
+    <div style="width:100%;">
+      <span class="tag t-am">🎁 Free Series 1 Reader Gift • Instant Access</span>
+      <h3>Claim Your Free "Data Detective Starter Kit"</h3>
+      <p>Unlock companion bundles, interactive sandbox access for Cases 1–3, practice CSVs, and a 1-page profit cheat sheet.</p>
+      <form class="funnel-form" onsubmit="claimGift(event)">
+        <input type="text" id="leadName" class="funnel-input" placeholder="Your First Name" required />
+        <input type="email" id="leadEmail" class="funnel-input" placeholder="Your Best Email Address" required />
+        <button type="submit" class="btn btn-am">🎁 Unlock Free Starter Kit →</button>
+      </form>
+      <div id="unlockedBox" class="unlocked">
+        <strong>🎉 Welcome, <span id="welcomeName">Data Detective</span>! Your Starter Kit is ready:</strong><br/>
+        1. <a href="https://streamlit.app" target="_blank" style="text-decoration:underline;font-weight:700;">Launch Free Interactive Sandbox (Cases 1–3) →</a><br/>
+        2. <a href="https://streamlit.app" target="_blank" style="text-decoration:underline;font-weight:700;">Download Sample Business &amp; RFM CSV Datasets inside Diagnostic OS™ →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stacked Product Solution Boxes -->
+  <section id="solutions">
+    <div id="diagnostic-os" class="box">
+      <div class="box-text">
+        <span class="tag t-em">01 • Automated Decision Intelligence</span>
+        <h3>📊 TechYatch Diagnostic OS™ (4-Stage Business Scanner)</h3>
+        <p>Automated CSV ingestion engine that detects profit leaks, generates 90-day solution blueprints, and models scaling.</p>
+      </div>
+      <a href="https://streamlit.app" target="_blank" class="btn btn-em">Launch Diagnostic OS →</a>
+    </div>
+
+    <div id="sandbox" class="box">
+      <div class="box-text">
+        <span class="tag t-am">02 • Interactive Decision Sandbox</span>
+        <h3>🕵️ TechYatch Lab™ 5-Case Simulation Suite</h3>
+        <p>Manipulate live pricing, churn, and forecasting sliders in your browser with SHA-256 verified credentials.</p>
+      </div>
+      <a href="https://streamlit.app" target="_blank" class="btn btn-am">Launch Lab App →</a>
+    </div>
+
+    <div id="training" class="box">
+      <div class="box-text">
+        <span class="tag t-sk">03 • Accredited Data Literacy &amp; IP</span>
+        <h3>🎓 Applied Analytics Upskilling &amp; Cohort Licensing</h3>
+        <p>Structured plain-English analytics curricula and simulation licenses for teams and cohorts.</p>
+      </div>
+      <a href="mailto:datadetective@://techyatchlab.com" class="btn btn-sk">Request Licensing →</a>
+    </div>
+
+    <div class="box">
+      <div class="box-text">
+        <span class="tag t-em">Founder &amp; Lead Product Architect</span>
+        <h3>Willa Abraham • MSc Data Science for Business (University of Stirling, UK)</h3>
+        <p>Building scalable decision-intelligence software and automated diagnostic engines.</p>
+      </div>
+      <a href="mailto:datadetective@://techyatchlab.com" class="btn">Contact Founder →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>TechYatch Lab™</strong> • Decision Intelligence Suite &amp; Diagnostic OS™</p>
+  <p style="margin-top:6px">Direct Inquiries: <a href="mailto:datadetective@techyatchlab.com">datadetective@techyatchlab.com</a> • <a href="https://streamlit.app" target="_blank">TechYatch Diagnostic OS™</a></p>
+</footer>
+
+<script>
+const WEBHOOK_URL = "https://google.com";
+
+const modes = {
+  biz: {
+    tag: "01 • Automated Decision Intelligence",
+    title: "TechYatch Diagnostic OS™: 4-Stage Business Scanner",
+    desc: "Upload raw operational and customer CSVs to automatically discover profit bottlenecks and generate solution blueprints.",
+    btn: "Launch Diagnostic OS →",
+    url: "https://streamlit.app",
+    target: "diagnostic-os"
+  },
+  lab: {
+    tag: "02 • Interactive Decision Sandbox",
+    title: "TechYatch Lab™ 5-Case Simulation & Auto-Grader",
+    desc: "Test real-world business scenarios inside Python & Streamlit without writing code.",
+    btn: "Open Live Sandbox →",
+    url: "https://streamlit.app",
+    target: "sandbox"
+  },
+  trn: {
+    tag: "03 • Book Series 1 & Starter Kit",
+    title: "Claim Your Free Data Detective Starter Kit",
+    desc: "Unlock free access to Cases 1–3, downloadable practice CSV spreadsheets, and our 1-page Business KPI & Profit Cheat Sheet.",
+    btn: "Claim Free Kit ↓",
+    url: "#starter-kit",
+    target: "starter-kit"
+  }
+};
+
+function setMode(k) {
+  ['biz', 'lab', 'trn'].forEach(id => document.getElementById('btn-' + id).classList.remove('active'));
+  document.getElementById('btn-' + k).classList.add('active');
+  document.getElementById('box-tag').textContent = modes[k].tag;
+  document.getElementById('box-title').textContent = modes[k].title;
+  document.getElementById('box-desc').textContent = modes[k].desc;
+  const a = document.getElementById('box-link');
+  a.textContent = modes[k].btn;
+  a.href = modes[k].url;
+  if (modes[k].url.startsWith('http')) { a.target = '_blank'; } else { a.removeAttribute('target'); }
+  document.getElementById(modes[k].target).scrollIntoView({ behavior: 'smooth' });
+}
+
+function claimGift(e) {
+  e.preventDefault();
+  const name = document.getElementById("leadName").value.trim();
+  const email = document.getElementById("leadEmail").value.trim();
+
+  document.getElementById("welcomeName").textContent = name;
+  document.getElementById("unlockedBox").style.display = "block";
+
+  fetch(WEBHOOK_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify({
+      Timestamp_UTC: new Date().toISOString(),
+      Organization_Or_Cohort: name + " <" + email + ">",
+      Module_Accessed: "SERIES 1 STARTER KIT LEAD",
+      Platform: "TechYatch Lab Website"
+    })
+  }).catch(() => {});
+}
+</script>
+
+</body>
+</html>
+
