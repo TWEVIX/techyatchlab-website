@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TechYatch Lab™ | Business Analytics Consulting &amp; AI Simulation Sandbox</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id],div[id]{scroll-margin-top:85px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#020617;color:#f8fafc;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{border-bottom:1px solid #1e293b;background:rgba(2,6,23,.95);position:sticky;top:0;z-index:50}
+.nav{max-width:960px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
+.brand img{width:42px;height:42px;border-radius:10px;object-fit:cover;border:1.5px solid #34d399;background:#fff}
+.mint{color:#34d399}
+.amber{color:#fbbf24}
+.sub{font-size:11px;font-weight:500;color:#94a3b8;letter-spacing:.5px}
+.links{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;color:#cbd5e1;flex-wrap:wrap}
+.links a:hover{color:#34d399}
+.pill-cta{background:#10b981;color:#020617!important;font-weight:700;padding:8px 18px;border-radius:999px}
+main{max-width:960px;margin:0 auto;padding:44px 24px}
+.hero{text-align:center;margin-bottom:44px}
+.badge{display:inline-block;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.35);color:#6ee7b7;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:6px 16px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1.15;margin-bottom:16px}
+.lead{color:#94a3b8;font-size:18px;max-width:680px;margin:0 auto 26px}
+.strip{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;max-width:740px;margin:0 auto 26px}
+.strip-card{flex:1;min-width:190px;background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:16px;text-align:center}
+.tabs{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.tab{font-weight:700;font-size:15px;padding:12px 22px;border-radius:12px;border:2px solid transparent;cursor:pointer}
+.tab-biz{background:#10b981;color:#020617}
+.tab-lab{background:#fbbf24;color:#020617}
+.tab-trn{background:#38bdf8;color:#020617}
+.tab.active{border-color:#ffffff;box-shadow:0 0 20px rgba(255,255,255,.2)}
+.box{background:#0f172a;border:1px solid #1e293b;border-radius:16px;padding:28px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;text-align:left}
+.box-hi{border-color:rgba(52,211,153,.45)}
+.box-gift{background:linear-gradient(145deg,#0f172a,#132238);border:1.5px solid rgba(251,191,36,.45)}
+.box-text{max-width:590px}
+.tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:4px 12px;border-radius:999px;margin-bottom:10px}
+.t-em{background:rgba(16,185,129,.15);color:#6ee7b7}
+.t-am{background:rgba(251,191,36,.15);color:#fcd34d}
+.t-sk{background:rgba(56,189,248,.15);color:#7dd3fc}
+.box h2,.box h3{font-size:22px;font-weight:700;margin-bottom:8px}
+.box p{color:#94a3b8;font-size:15px}
+.btn{display:inline-block;background:#1e293b;border:1px solid #334155;color:#f8fafc;font-weight:700;font-size:14px;padding:12px 22px;border-radius:12px;white-space:nowrap;cursor:pointer}
+.btn-em{background:#10b981;border-color:#10b981;color:#020617}
+.btn-am{background:#fbbf24;border-color:#fbbf24;color:#020617}
+.btn-sk{background:#38bdf8;border-color:#38bdf8;color:#020617}
+.btn:hover{opacity:.92}
+.funnel-form{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.funnel-input{background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;min-width:210px;flex:1}
+.funnel-input:focus{outline:none;border-color:#fbbf24}
+.gift-list{margin-top:10px;font-size:13px;color:#cbd5e1;line-height:1.8}
+.unlocked{display:none;margin-top:14px;padding:14px;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.4);border-radius:12px;font-size:14px;color:#6ee7b7}
+footer{border-top:1px solid #1e293b;padding:32px 24px;text-align:center;font-size:14px;color:#94a3b8}
+footer a{color:#34d399;font-weight:600}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="logo.png" alt="TechYatch Lab Logo" />
+      <div>
+        <div>TechYatch <span class="mint">Lab™</span></div>
+        <div class="sub">DATA ANALYTICS • BUSINESS INTELLIGENCE • SANDBOXES</div>
+      </div>
+    </div>
+    <div class="links">
+      <a href="#solutions">Solutions</a>
+      <a href="#starter-kit">Free Reader Kit</a>
+      <a href="mailto:datadetective@techyatchlab.com">datadetective@techyatchlab.com</a>
+      <a href="https://techyatch-lab.streamlit.app/" target="_blank" class="pill-cta">Launch Lab →</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="badge">Applied Data Science • Business Decision Intelligence</div>
+    <h1>Turn Business Numbers Into <span class="mint">Clear, Profitable Decisions</span></h1>
+    <p class="lead"><strong>TechYatch Lab™</strong> helps SMEs, founders, and emerging analysts uncover hidden profit leaks, reduce customer churn, and test operational decisions inside browser-based Python &amp; Streamlit sandboxes.</p>
+
+    <div class="strip">
+      <div class="strip-card">
+        <div style="font-size:26px;margin-bottom:6px;">🕵️</div>
+        <div style="font-size:13px;font-weight:700;color:#34d399;">Unit Economics &amp; Margin</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Fix High-Volume Profit Leaks</div>
+      </div>
+      <div class="strip-card">
+        <div style="font-size:26px;margin-bottom:6px;">📈</div>
+        <div style="font-size:13px;font-weight:700;color:#fbbf24;">Churn &amp; Funnel Audits</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Retention &amp; Checkout Recovery</div>
+      </div>
+      <div class="strip-card">
+        <div style="font-size:26px;margin-bottom:6px;">🎓</div>
+        <div style="font-size:13px;font-weight:700;color:#38bdf8;">SHA-256 Credentials</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Verified Portfolio Auto-Grader</div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button onclick="setMode('biz')" id="btn-biz" class="tab tab-biz active">📊 Business Analytics Advisory</button>
+      <button onclick="setMode('lab')" id="btn-lab" class="tab tab-lab">🕵️ Interactive Simulation Lab</button>
+      <button onclick="setMode('trn')" id="btn-trn" class="tab tab-trn">📘 Book Series 1 &amp; Starter Kit</button>
+    </div>
+
+    <div class="box box-hi">
+      <div class="box-text">
+        <div id="box-tag" class="tag t-em">01 • SME &amp; Commercial Analytics</div>
+        <h2 id="box-title">Profitability, Funnel &amp; Churn Diagnostic Consulting</h2>
+        <p id="box-desc">Identify why revenue growth isn't translating into net profit—diagnosing mobile checkout drop-offs, customer churn cohorts, and seasonal demand bottlenecks with actionable Python models.</p>
+      </div>
+      <a id="box-link" href="mailto:datadetective@://techyatchlab.com" class="btn btn-em">Book Advisory →</a>
+    </div>
+  </section>
+
+  <!-- Email Capture Funnel: Series 1 Free Reader Starter Kit -->
+  <section id="starter-kit" class="box box-gift">
+    <div style="width:100%;">
+      <span class="tag t-am">🎁 Free Series 1 Reader Gift • Instant Access</span>
+      <h3>Claim Your Free "Data Detective Starter Kit"</h3>
+      <p>Reading <em>Simplifying Data Analytics to a Toddler (Series 1: How to Be a Data Analyst)</em> or starting your analytics journey? Enter your details below to unlock your free companion bundle:</p>
+      <div class="gift-list">
+        ✅ <strong>Free Interactive Sandbox Access:</strong> Test Cases 1–3 live in your browser (Martha's Bakery, FitLife Gym &amp; Bean &amp; Brew)<br/>
+        ✅ <strong>Clean Practice CSV Datasets:</strong> Downloadable retail, churn, and sales spreadsheets to practice alongside the book<br/>
+        ✅ <strong>1-Page Profit &amp; KPI Cheat Sheet:</strong> Plain-English formulas for Unit Margin, Cohort Churn &amp; Funnel Conversion
+      </div>
+      <form class="funnel-form" onsubmit="claimGift(event)">
+        <input type="text" id="leadName" class="funnel-input" placeholder="Your First Name" required />
+        <input type="email" id="leadEmail" class="funnel-input" placeholder="Your Best Email Address" required />
+        <button type="submit" class="btn btn-am">🎁 Unlock Free Starter Kit →</button>
+      </form>
+      <div id="unlockedBox" class="unlocked">
+        <strong>🎉 Welcome, <span id="welcomeName">Data Detective</span>! Your Starter Kit is ready:</strong><br/>
+        1. <a href="https://techyatch-lab.streamlit.app/" target="_blank" style="text-decoration:underline;font-weight:700;">Launch Free Interactive Sandbox (Cases 1–3) →</a><br/>
+        2. <a href="mailto:datadetective@://techyatchlab.com" style="text-decoration:underline;font-weight:700;">Click here to have the CSV Datasets &amp; KPI Cheat Sheet emailed directly to you →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stacked Service Boxes -->
+  <section id="solutions">
+    <div id="consulting" class="box">
+      <div class="box-text">
+        <span class="tag t-em">01 • Business Analytics Consulting</span>
+        <h3>📊 SME Revenue, Margin &amp; Retention Audits</h3>
+        <p>Custom data diagnostics for retail, e-commerce, and growing businesses—pinpointing low-margin product traps, mobile checkout friction, and high-value customer retention levers.</p>
+      </div>
