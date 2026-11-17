@@ -139,25 +139,7 @@ footer a{color:#34d399;font-weight:600}
      
 
 
-function claimGift(e) {
-  e.preventDefault();
-  const name = document.getElementById("leadName").value.trim();
-  const email = document.getElementById("leadEmail").value.trim();
 
-  document.getElementById("welcomeName").textContent = name;
-  document.getElementById("unlockedBox").style.display = "block";
-
-  if (WEBHOOK_URL && !WEBHOOK_URL.includes("https://script.google.com/macros/s/AKfycbyxRtRvqaBXsmFlzHWvH4yE3xxSb6kGpx1yUtIBBujztg-0lZxj0uLf2X_Ou9ny5yOc-A/exec")) {
-    fetch(WEBHOOK_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({
-        Timestamp_UTC: new Date().toISOString(),
-        Organization_Or_Cohort: name + " <" + email + ">",
-        Module_Accessed: "SERIES 1 STARTER KIT LEAD",
-        Platform: "TechYatch Lab Website"
-      })
     }).catch(() => {});
   }
 }
