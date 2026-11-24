@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TechYatch Lab™ | Applied Analytics Lab  &amp; Internship Suite</title>
+<title>TechYatch Lab™ | Applied Data &amp; AI Lab • Rwanda Industry Attachment</title>
 <link rel="icon" type="image/png" href="favicon.png" />
-
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -15,12 +14,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 a{text-decoration:none;color:inherit}
 header{border-bottom:1px solid #1e293b;background:rgba(2,6,23,.95);position:sticky;top:0;z-index:50}
 .nav{width:100%;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
 .brand img{width:76px;height:76px;border-radius:14px;object-fit:cover;border:1.5px solid #34d399;background:transparent;padding:0}
-
-
-
 .mint{color:#34d399}
 .sub{font-size:11px;font-weight:500;color:#94a3b8;letter-spacing:.5px}
 .links{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;color:#cbd5e1}
@@ -30,9 +25,9 @@ main{max-width:960px;margin:0 auto;padding:44px 24px}
 .hero{text-align:center;margin-bottom:44px}
 .badge{display:inline-block;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.35);color:#6ee7b7;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:6px 16px;border-radius:999px;margin-bottom:18px}
 h1{font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1.15;margin-bottom:16px}
-.lead{color:#94a3b8;font-size:18px;max-width:680px;margin:0 auto 26px}
-.strip{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;max-width:740px;margin:0 auto 26px}
-.strip-card{flex:1;min-width:190px;background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:16px;text-align:center}
+.lead{color:#94a3b8;font-size:18px;max-width:700px;margin:0 auto 26px}
+.strip{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;max-width:760px;margin:0 auto 26px}
+.strip-card{flex:1;min-width:200px;background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:16px;text-align:center}
 .tabs{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
 .tab{font-weight:700;font-size:15px;padding:12px 22px;border-radius:12px;border:2px solid transparent;cursor:pointer}
 .tab-biz{background:#10b981;color:#020617}
@@ -42,7 +37,6 @@ h1{font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1.15;margin-bottom
 .box{background:#0f172a;border:1px solid #1e293b;border-radius:16px;padding:28px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;text-align:left}
 .box-hi{border-color:rgba(52,211,153,.45)}
 .box-gift{background:linear-gradient(135deg,#1e293b 0%,#272112 55%,#0f2922 100%);border:2px solid #fbbf24;box-shadow:0 12px 36px rgba(251,191,36,.18)}
-
 .box-text{max-width:590px}
 .tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:4px 12px;border-radius:999px;margin-bottom:10px}
 .t-em{background:rgba(16,185,129,.15);color:#6ee7b7}
@@ -55,12 +49,6 @@ h1{font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1.15;margin-bottom
 .btn-am{background:#fbbf24;border-color:#fbbf24;color:#020617}
 .btn-sk{background:#38bdf8;border-color:#38bdf8;color:#020617}
 .btn:hover{opacity:.92}
-.funnel-input{background:#0f172a;border:1.5px solid #64748b;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;min-width:210px;flex:1}
-
-.funnel-input{background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;min-width:210px;flex:1}
-.funnel-input:focus{outline:none;border-color:#fbbf24}
-.gift-list{margin-top:10px;font-size:13px;color:#cbd5e1;line-height:1.8}
-.unlocked{display:none;margin-top:14px;padding:14px;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.4);border-radius:12px;font-size:14px;color:#6ee7b7}
 footer{border-top:1px solid #1e293b;padding:32px 24px;text-align:center;font-size:14px;color:#94a3b8}
 footer a{color:#34d399;font-weight:600}
 /* Fix MailerLite Landscape form width, remove white box & match dark theme */
@@ -71,8 +59,8 @@ footer a{color:#34d399;font-weight:600}
 .ml-form-horizontalRow .ml-input-horizontal input { background: #020617 !important; border: 1px solid #334155 !important; color: #f8fafc !important; border-radius: 10px !important; padding: 12px 14px !important; }
 .ml-form-horizontalRow .ml-button-horizontal { width: auto !important; padding: 0 !important; }
 .ml-form-horizontalRow button { white-space: nowrap !important; padding: 12px 24px !important; border-radius: 10px !important; }
-   
 </style>
+
 <!-- MailerLite Universal -->
 <script>
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
@@ -81,9 +69,8 @@ footer a{color:#34d399;font-weight:600}
     (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
     ml('account', '2818391');
     if (window.location.search) { window.history.replaceState({}, document.title, window.location.pathname + window.location.hash); }
-
 </script>
-<!-- End MailerLite Universal -->  
+<!-- End MailerLite Universal -->
 </head>
 <body>
 
@@ -93,59 +80,61 @@ footer a{color:#34d399;font-weight:600}
       <img src="logo.png" alt="TechYatch Lab Logo" />
       <div>
         <div>TechYatch <span class="mint">Lab™</span></div>
-        <div class="sub">DECISION INTELLIGENCE • DIAGNOSTIC OS™ • SANDBOXES</div>
+        <div class="sub">APPLIED DATA &amp; AI LAB • RWANDA HUB • SANDBOXES</div>
       </div>
     </div>
     <div class="links">
-      <a href="#solutions">Solutions</a>
-      <a href="#starter-kit">Free Kit</a>
-      <a href="https://techyatch-lab.streamlit.app/" target="_blank" class="pill-cta">Diagnostic OS →</a>
+      <a href="#solutions">Lab Sandboxes</a>
+      <a href="#internship">Industry Attachment</a>
+      <a href="#employers">Hire Talent</a>
+      <a href="#starter-kit" class="pill-cta">Free Starter Kit →</a>
     </div>
   </div>
 </header>
 
 <main>
   <section class="hero">
-    <div class="badge">Proprietary Decision Intelligence Suite • Scalable SaaS</div>
-    <h1>Turn Business Numbers Into <span class="mint">Clear, Profitable Decisions</span></h1>
-    <p class="lead"><strong>TechYatch Lab™</strong> equips SMEs, founders, and analytics teams with automated diagnostic engines to eliminate profit leaks, prevent customer churn, and scale sustainably.</p>
+    <div class="badge">TechYatch Lab™ (A Division of TWEVIX Z LTD) • Kigali, Rwanda</div>
+    <h1>Bridging Classroom Theory &amp; <span class="mint">Workplace Analytical Decisions</span></h1>
+    <p class="lead"><strong>TechYatch Lab™</strong> trains and supervises high-potential Data &amp; AI interns out of our hubs using zero-setup cloud sandboxes, automated quantitative evaluations, and real local business deployments.</p>
 
     <div class="strip">
       <div class="strip-card">
-        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">🔍</div>
-
-
-        <div style="font-size:13px;font-weight:700;color:#34d399;">Problem Discovery</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Automated Margin &amp; Waste Scan</div>
+        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">☁️</div>
+        <div style="font-size:13px;font-weight:700;color:#34d399;">Zero-Setup Sandboxes</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Browser Python, SQL, BI &amp; NLP</div>
       </div>
       <div class="strip-card">
-        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">🔄</div>
-
-
-        <div style="font-size:13px;font-weight:700;color:#fbbf24;">RFM Churn Engine</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">High-Value Cohort Retention</div>
+        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">⚙️</div>
+        <div style="font-size:13px;font-weight:700;color:#fbbf24;">Automated Evaluation</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Quantitative Decision Grading</div>
       </div>
       <div class="strip-card">
         <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">🎓</div>
-
-
         <div style="font-size:13px;font-weight:700;color:#38bdf8;">SHA-256 Credentials</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Verified Portfolio Auto-Grader</div>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Tamper-Evident Portfolio Proof</div>
       </div>
     </div>
 
     <div class="tabs">
-      <button onclick="setMode('biz')" id="btn-biz" class="tab tab-biz active">📊 TechYatch Diagnostic OS™</button>
-      <button onclick="setMode('lab')" id="btn-lab" class="tab tab-lab">🕵️ 5-Case Simulation Lab</button>
-      <button onclick="setMode('trn')" id="btn-trn" class="tab tab-trn">📘 Book Series 1 &amp; Starter Kit</button>
+      <button onclick="setMode('trn')" id="btn-trn" class="tab tab-trn active">🎓 12-Week Industry Attachment</button>
+      <button onclick="setMode('lab')" id="btn-lab" class="tab tab-lab">🕵 5-Case Simulation Lab</button>
+      <button onclick="setMode('biz')" id="btn-biz" class="tab tab-biz">🏢 Employer Micro-Squads</button>
     </div>
 
-   
+    <div class="box box-hi">
+      <div class="box-text">
+        <div id="box-tag" class="tag t-sk">01 • Rwanda Applied Data &amp; AI Cohort</div>
+        <h2 id="box-title">12-Week Practical Industrial Attachment (Musanze Hub)</h2>
+        <p id="box-desc">Designed for final-year CS, IT, Statistics, Agri-Data students, Career Changers, Professional Upgrades. Train on zero-setup browser sandboxes and build real dashboards &amp; AI assistants for local businesses.</p>
+      </div>
+      <button type="button" id="box-action" onclick="openLabModal('student')" class="btn btn-sk">Apply for Attachment →</button>
+    </div>
   </section>
-    <!-- Email Capture Funnel & Product Solution Boxes -->
-    <section id="starter-kit" class="box box-gift">
+
+  <section id="starter-kit" class="box box-gift">
     <div style="width:100%;">
-      <span class="tag t-am">🎁 Free Series 1 Reader Gift • Instant Access</span>
+      <span class="tag t-am">🎁 Free Series 1 Reader &amp; Trainee Gift • Instant Access</span>
       <h3>Claim Your Free "Data Detective Starter Kit"</h3>
       <p style="margin-bottom:16px;">Unlock companion bundles, interactive sandbox access for Cases 1–3, practice CSVs, and a 1-page profit cheat sheet.</p>
 
@@ -153,133 +142,11 @@ footer a{color:#34d399;font-weight:600}
     </div>
   </section>
 
+  <section id="internship" class="box box-hi" style="display:block;">
+    <span class="tag t-sk">TechYatch Lab™ (A Division of TWEVIX Z LTD) • Applied Data &amp; AI Industry Attachment</span>
+    <h3 style="font-size:24px;margin-bottom:10px;">🎓 Bridging Classroom Theory &amp; Workplace Analytical Decisions in Rwanda</h3>
+    <p style="color:#cbd5e1;font-size:15px;margin-bottom:16px;">
+      Are you a final-year <strong>Computer Science, IT, Statistics, or Agri-Data</strong> student at <strong>INES-Ruhengeri</strong>, <strong>IPRC Musanze</strong>, or <strong>UR-CAVM</strong> looking for a hands-on industrial attachment? Join <strong>TechYatch Lab™</strong> for a 12-week practical Data &amp; AI program right here in Rwanda:
+    </p>
 
-  <!-- Stacked Product Solution Boxes -->
-  <section id="solutions">
-    <div id="diagnostic-os" class="box">
-      <div class="box-text">
-        <span class="tag t-em">01 • Automated Decision Intelligence</span>
-        <h3>📊 TechYatch Diagnostic OS™ (4-Stage Business Scanner)</h3>
-        <p>Automated CSV ingestion engine that detects profit leaks, generates 90-day solution blueprints, and models scaling.</p>
-      </div>
-      <a href="https://techyatch-lab.streamlit.app/" target="_blank" class="btn btn-em">Launch Diagnostic OS →</a>
-    </div>
-
-    <div id="sandbox" class="box">
-      <div class="box-text">
-        <span class="tag t-am">02 • Interactive Decision Sandbox</span>
-        <h3>🕵️ TechYatch Lab™ 5-Case Simulation Suite</h3>
-        <p>Manipulate live pricing, churn, and forecasting sliders in your browser with SHA-256 verified credentials.</p>
-      </div>
-      <a href="https://techyatch-lab.streamlit.app/" target="_blank" class="btn btn-am">Launch Lab App →</a>
-    </div>
-
-    <div id="training" class="box">
-      <div class="box-text">
-        <span class="tag t-sk">03 • Accredited Data Literacy &amp; IP</span>
-        <h3>🎓 Applied Analytics Upskilling &amp; Cohort Licensing</h3>
-        <p>Structured plain-English analytics curricula and simulation licenses for teams and cohorts.</p>
-      </div>
-      <a href="mailto:datadetective@://techyatchlab.com" class="btn btn-sk">Request Licensing →</a>
-    </div>
-
-    <div class="box">
-      <div class="box-text">
-        <span class="tag t-em">Founder &amp; Lead Product Architect</span>
-        <h3>Willa Abraham • MSc Data Science for Business (University of Stirling, UK)</h3>
-        <p>Building scalable decision-intelligence software and automated diagnostic engines.</p>
-      </div>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn">Connect on LinkedIn →</a>
-
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p><strong>TechYatch Lab™</strong> • Decision Intelligence Suite &amp; Diagnostic OS™</p>
-  <p style="margin-top:6px">Direct Inquiries: <a href="mailto:datadetective@techyatchlab.com">datadetective@techyatchlab.com</a> • <a href="https://streamlit.app" target="_blank">TechYatch Diagnostic OS™</a></p>
-</footer>
-
-<script>
-const WEBHOOK_URL = "https://google.com";
-
-const modes = {
-  biz: {
-    tag: "01 • Automated Decision Intelligence",
-    title: "TechYatch Diagnostic OS™: 4-Stage Business Scanner",
-    desc: "Upload raw operational and customer CSVs to automatically discover profit bottlenecks and generate solution blueprints.",
-    btn: "Launch Diagnostic OS →",
-    url: "https://techyatch-lab.streamlit.app/",
-    target: "diagnostic-os"
-  },
-  lab: {
-    tag: "02 • Interactive Decision Sandbox",
-    title: "TechYatch Lab™ 5-Case Simulation & Auto-Grader",
-    desc: "Test real-world business scenarios inside Python & Streamlit without writing code.",
-    btn: "Open Live Sandbox →",
-    url: "https://techyatch-lab.streamlit.app/",
-    target: "sandbox"
-  },
-  trn: {
-    tag: "03 • Book Series 1 & Starter Kit",
-    title: "Claim Your Free Data Detective Starter Kit",
-    desc: "Unlock free access to Cases 1–3, downloadable practice CSV spreadsheets, and our 1-page Business KPI & Profit Cheat Sheet.",
-    btn: "Claim Free Kit ↓",
-    url: "#starter-kit",
-    target: "starter-kit"
-  }
-};
-
-function setMode(k) {
-  ['biz', 'lab', 'trn'].forEach(id => document.getElementById('btn-' + id).classList.remove('active'));
-  document.getElementById('btn-' + k).classList.add('active');
-  document.getElementById('box-tag').textContent = modes[k].tag;
-  document.getElementById('box-title').textContent = modes[k].title;
-  document.getElementById('box-desc').textContent = modes[k].desc;
-  const a = document.getElementById('box-link');
-  a.textContent = modes[k].btn;
-  a.href = modes[k].url;
-  if (modes[k].url.startsWith('http')) { a.target = '_blank'; } else { a.removeAttribute('target'); }
-  document.getElementById(modes[k].target).scrollIntoView({ behavior: 'smooth' });
-}
-
-const MAILERLITE_ACTION_URL = "https://assets." + "mailerlite.com" + "/jsonp/2818391/forms/205001111235462579/subscribe";
-
-
-
-function claimGift(e) {
-  e.preventDefault();
-  const name = document.getElementById("leadName").value.trim();
-  const email = document.getElementById("leadEmail").value.trim();
-
-  document.getElementById("welcomeName").textContent = name;
-  document.getElementById("unlockedBox").style.display = "block";
-
-  // 1. Send subscriber to MailerLite (triggers your automated email)
-  const mlData = new FormData();
-  mlData.append("fields[name]", name);
-  mlData.append("fields[email]", email);
-  mlData.append("ml-submit", "1");
-  mlData.append("anticsrf", "true");
-
-  fetch(MAILERLITE_ACTION_URL, {
-    method: "POST",
-    body: mlData,
-    mode: "no-cors"
-  });
-
-  // 2. Keep your existing webhook logger active
-  fetch(WEBHOOK_URL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
-    body: JSON.stringify({
-      Timestamp_UTC: new Date().toISOString(),
-      Organization_Or_Cohort: name + " <" + email + ">",
-      Module_Accessed: "SERIES 1 STARTER KIT LEAD",
-      Platform: "TechYatch Lab Website"
-    })
-  });
-}
-
-
+    <ul style="list-style:none;margin-bottom:22px;display:grid;gap:12px;font-size:15px;color:#e2e8f0;">
