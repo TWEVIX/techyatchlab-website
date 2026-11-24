@@ -141,7 +141,7 @@ footer a{color:#34d399;font-weight:600}
     </div>
   </section>
 
-  <section id="internship" class="box box-hi" style="display:block;">
+    <section id="internship" class="box box-hi" style="display:block;">
     <span class="tag t-sk">TechYatch Lab™ (A Division of TWEVIX Z LTD) • Applied Data &amp; AI Industry Attachment</span>
     <h3 style="font-size:24px;margin-bottom:10px;">🎓 Bridging Classroom Theory &amp; Workplace Analytical Decisions in Rwanda</h3>
     <p style="color:#cbd5e1;font-size:15px;margin-bottom:16px;">
@@ -149,3 +149,145 @@ footer a{color:#34d399;font-weight:600}
     </p>
 
     <ul style="list-style:none;margin-bottom:22px;display:grid;gap:12px;font-size:15px;color:#e2e8f0;">
+      <li>✅ <strong>Zero-Setup Cloud Sandboxes:</strong> Trainees analyze realistic commercial, hospitality, agricultural, and clinical scenarios directly in any browser—requiring zero local software installation from anywhere in Rwanda.</li>
+      <li>✅ <strong>Automated Quantitative Evaluation:</strong> Built-in decision assessments test business reasoning, margin analysis, and operational forecasting without manual grading bottlenecks.</li>
+      <li>✅ <strong>Verified Portfolio Credentials:</strong> Graduates earn tamper-evident <strong>SHA-256 credential IDs</strong> demonstrating job-ready analytical competence to Kigali &amp; global remote employers.</li>
+    </ul>
+
+    <button type="button" onclick="openLabModal('student')" class="btn btn-sk">Apply for Industry Attachment →</button>
+  </section>
+
+  <section id="employers" class="box" style="display:block;border-color:rgba(251,191,36,.45);">
+    <span class="tag t-am">For Employers &amp; Engineering Teams • Rwanda Delivery Network</span>
+    <h3 style="font-size:24px;margin-bottom:10px;">🏢 Deploy Supervised Data &amp; AI Interns or Managed Micro-Squads</h3>
+    <p style="color:#cbd5e1;font-size:15px;margin-bottom:16px;">
+      Hiring and training junior data analysts or AI data specialists takes significant time away from senior engineering teams. At <strong>TechYatch Lab™ (TWEVIX Z LTD)</strong>, we train and supervise high-potential Data &amp; AI interns across <strong>Rwanda</strong> so they are production-ready from day one:
+    </p>
+
+    <ul style="list-style:none;margin-bottom:20px;display:grid;gap:10px;font-size:15px;color:#e2e8f0;">
+      <li>📊 <strong>Data Analytics &amp; BI:</strong> Python, SQL, Excel/Power BI reporting, and automated data pipeline cleanup.</li>
+      <li>🤖 <strong>AI Data Operations:</strong> High-accuracy image/text annotation, <strong>Kinyarwanda / English NLP datasets</strong>, and LLM evaluation / RLHF.</li>
+      <li>🛡️ <strong>Technical Supervision &amp; Zero-Overhead Conversion:</strong> Every intern works under our dedicated technical supervision in Rwanda—giving you reliable output at a fraction of standard hiring overhead, with the option to hire top performers full-time after their internship.</li>
+    </ul>
+
+    <button type="button" onclick="openLabModal('employer')" class="btn btn-am">Submit a Role Vacancy / Request 15-Min Call →</button>
+  </section>
+
+  <section id="solutions">
+    <div class="box">
+      <div class="box-text">
+        <span class="tag t-am">01 • Interactive Decision Sandbox</span>
+        <h3>🕵 TechYatch Lab™ 5-Case Simulation Suite</h3>
+        <p>Manipulate live pricing, churn, inventory waste, and forecasting sliders directly in your browser with automated quantitative scoring and SHA-256 portfolio verification.</p>
+      </div>
+      <a id="lab-app-link" href="#" target="_blank" class="btn btn-am">Launch Lab App →</a>
+    </div>
+
+    <div class="box">
+      <div class="box-text">
+        <span class="tag t-em">02 • Applied Diagnostic Sandbox</span>
+        <h3>📊 4-Stage Operational Diagnostic Engine</h3>
+        <p>Practice automated CSV ingestion, profit-leak isolation, 90-day solution blueprinting, and RFM cohort retention across commercial, agricultural, and clinical datasets.</p>
+      </div>
+      <a id="diag-app-link" href="#" target="_blank" class="btn btn-em">Open Diagnostic Sandbox →</a>
+    </div>
+
+    <div class="box">
+      <div class="box-text">
+        <span class="tag t-em">Founder &amp; Lead Product Architect</span>
+        <h3>Willa Abraham • MSc Data Science for Business (University of Stirling, UK)</h3>
+        <p>Building scalable decision-intelligence software, zero-setup cloud sandboxes, and supervised applied Data &amp; AI training infrastructure across Rwanda.</p>
+      </div>
+      <a href="https://linkedin.com" target="_blank" class="btn">Connect on LinkedIn →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>TechYatch Lab™</strong> (A Division of <strong>TWEVIX Z LTD</strong>) • Kigali &amp; Musanze, Rwanda</p>
+  <p style="margin-top:6px;">
+    Direct Inquiries &amp; Partnerships: <a href="mailto:datadetective@techyatchlab.com">datadetective@techyatchlab.com</a>
+  </p>
+</footer>
+
+<div id="labModal" style="display:none;position:fixed;inset:0;background:rgba(2,6,23,.85);z-index:100;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#0f172a;border:1px solid #334155;border-radius:16px;max-width:500px;width:100%;padding:28px;position:relative;color:#f8fafc;">
+    <button type="button" onclick="closeLabModal()" style="position:absolute;top:16px;right:18px;background:none;border:none;color:#94a3b8;font-size:24px;cursor:pointer;">&times;</button>
+    <div id="modalTag" class="tag t-sk">TechYatch Lab™ Intake</div>
+    <h3 id="modalTitle" style="font-size:21px;margin-bottom:8px;">Apply for Industry Attachment</h3>
+    <p id="modalDesc" style="color:#94a3b8;font-size:14px;margin-bottom:18px;"></p>
+
+    <form id="labIntakeForm" onsubmit="submitLabIntake(event)" style="display:grid;gap:12px;">
+      <input type="text" id="intakeName" required placeholder="Full Name *" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;" />
+      <input type="email" id="intakeEmail" required placeholder="Email Address *" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;" />
+      <input type="text" id="intakeOrg" required placeholder="University, Campus & District (e.g., UR-CST Kigali) *" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;" />
+      <select id="intakeTrack" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;"></select>
+      <textarea id="intakeNotes" rows="3" placeholder="Brief note on your availability, location in Rwanda, or project/role requirements..." style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;font-family:inherit;"></textarea>
+      <button type="submit" id="intakeSubmitBtn" class="btn btn-sk" style="width:100%;text-align:center;">Submit Application →</button>
+    </form>
+
+    <div id="intakeSuccess" style="display:none;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.4);border-radius:12px;padding:16px;margin-top:12px;font-size:14px;color:#a7f3d0;"></div>
+  </div>
+</div>
+
+<script>
+const ST_APP_URL = "https://techyatch-lab." + "streamlit.app/";
+const WEBHOOK_URL = "";
+
+document.getElementById("lab-app-link").href = ST_APP_URL;
+document.getElementById("diag-app-link").href = ST_APP_URL;
+
+const modes = {
+  trn: {
+    tag: "01 • Rwanda-Wide Applied Data & AI Cohort",
+    tagClass: "tag t-sk",
+    title: "12-Week Practical Industrial Attachment (All Rwanda)",
+    desc: "Open to final-year Computer Science, IT, Statistics, Economics, and Agri-Data students across Rwanda (UR, INES-Ruhengeri, IPRC campuses, AUCA, ALU, Kepler & partner institutions). Train in your browser and build real dashboards & AI solutions.",
+    btnText: "Apply for Attachment →",
+    btnClass: "btn btn-sk",
+    action: () => openLabModal("student")
+  },
+  lab: {
+    tag: "02 • Zero-Setup Cloud Sandboxes",
+    tagClass: "tag t-am",
+    title: "5-Case Interactive Decision & Simulation Lab",
+    desc: "Analyze commercial, hospitality, agricultural, and clinical scenarios right in your browser with automated quantitative evaluation and tamper-evident SHA-256 credentials.",
+    btnText: "Launch Cloud Sandbox →",
+    btnClass: "btn btn-am",
+    action: () => window.open(ST_APP_URL, "_blank")
+  },
+  biz: {
+    tag: "03 • Supervised Remote Squads & Hiring",
+    tagClass: "tag t-em",
+    title: "Deploy Rwanda Data & AI Micro-Squads or Post a Vacancy",
+    desc: "Offload Python/SQL/Power BI reporting, Kinyarwanda/English NLP annotation, and LLM evaluation to supervised interns across Rwanda—with full-time conversion options.",
+    btnText: "Request Squad / Post Role →",
+    btnClass: "btn btn-em",
+    action: () => openLabModal("employer")
+  }
+};
+
+function setMode(mode) {
+  const m = modes[mode];
+  const tagEl = document.getElementById("box-tag");
+  tagEl.textContent = m.tag;
+  tagEl.className = m.tagClass;
+  document.getElementById("box-title").textContent = m.title;
+  document.getElementById("box-desc").textContent = m.desc;
+
+  const actionBtn = document.getElementById("box-action");
+  actionBtn.textContent = m.btnText;
+  actionBtn.className = m.btnClass;
+  actionBtn.onclick = m.action;
+
+  document.querySelectorAll(".tab").forEach(btn => btn.classList.remove("active"));
+  document.getElementById("btn-" + mode).classList.add("active");
+}
+
+let currentIntakeType = "student";
+
+function openLabModal(type) {
+  currentIntakeType = type;
+  const modal = document.getElementById("labModal");
+  const tag = document.getElementById("modalTag");
+  const title = document.getElementById("modalTitle");
