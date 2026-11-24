@@ -230,6 +230,8 @@ function setMode(k) {
   document.getElementById(modes[k].target).scrollIntoView({ behavior: 'smooth' });
 }
 
+const MAILERLITE_ACTION_URL = "https://mailerlite.com" + "/jsonp/2818391/forms/205001111235462579/subscribe";
+
 function claimGift(e) {
   e.preventDefault();
   const name = document.getElementById("leadName").value.trim();
@@ -238,6 +240,20 @@ function claimGift(e) {
   document.getElementById("welcomeName").textContent = name;
   document.getElementById("unlockedBox").style.display = "block";
 
+  // 1. Send subscriber to MailerLite (triggers your automated email)
+  const mlData = new FormData();
+  mlData.append("fields[name]", name);
+  mlData.append("fields[email]", email);
+  mlData.append("ml-submit", "1");
+  mlData.append("anticsrf", "true");
+
+  fetch(MAILERLITE_ACTION_URL, {
+    method: "POST",
+    body: mlData,
+    mode: "no-cors"
+  });
+
+  // 2. Keep your existing webhook logger active
   fetch(WEBHOOK_URL, {
     method: "POST",
     mode: "no-cors",
@@ -248,10 +264,7 @@ function claimGift(e) {
       Module_Accessed: "SERIES 1 STARTER KIT LEAD",
       Platform: "TechYatch Lab Website"
     })
-  }).catch(() => {});
+  });
 }
-</script>
 
-</body>
-</html>
 
