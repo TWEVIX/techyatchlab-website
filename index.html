@@ -11,33 +11,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
 
-  <!-- Tailwind CSS & Google Fonts -->
-  <script src="https://tailwindcss.com"></script>
-  <link rel="preconnect" href="https://googleapis.com" />
-  <link rel="preconnect" href="https://gstatic.com" crossorigin />
-  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+   <link href="https://jsdelivr.net" rel="stylesheet" />
+  <style>
+    .bg-navy { background-color: #0B192C !important; }
+    .bg-navyLight { background-color: #132743 !important; }
+    .text-navy { color: #0B192C !important; }
+    .hover\:bg-navyLight:hover { background-color: #132743 !important; }
+    .bg-amber-500 { background-color: #F59E0B !important; }
+    .hover\:bg-amber-400:hover { background-color: #FBBF24 !important; }
+    .bg-sky-500 { background-color: #0EA5E9 !important; }
+    .hover\:bg-sky-400:hover { background-color: #38BDF8 !important; }
+    .text-sky-400 { color: #38BDF8 !important; }
+    .text-sky-300 { color: #7DD3FC !important; }
+    .text-sky-600 { color: #0284C7 !important; }
+    .bg-sky-100 { background-color: #E0F2FE !important; }
+    .text-sky-800 { color: #075985 !important; }
+    .bg-amber-100 { background-color: #FEF3C7 !important; }
+    .text-amber-800 { color: #92400E !important; }
+    .text-amber-900 { color: #78350F !important; }
+    .border-amber-400 { border-color: #FBBF24 !important; }
+  </style>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            navy: '#0B192C',
-            navyLight: '#132743',
-            tealBrand: '#1B6B73',
-            cyanAccent: '#0EA5E9',
-            goldAccent: '#F59E0B',
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
   <!-- STICKY TOP NAVIGATION -->
   <header class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-slate-800 text-white">
