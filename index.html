@@ -144,6 +144,167 @@
         <a href="#jobs">Job Board & Recruiters</a>
         <a href="#verify">Verify SHA-256</a>
       </nav>
-      <div class="nav-actions">
+            <div class="nav-actions">
         <button class="btn btn-outline btn-sm" onclick="openModal('recruiter')">Post a Job</button>
         <button class="btn btn-amber btn-sm" onclick="openModal('learner')">Apply Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill">🇷🇼 APPLIED EDTECH + HRTECH ECOSYSTEM • RWANDA & REMOTE</div>
+        <h1>Applied Data & AI Training, <span>3-Month Internships</span> & Verified Tech Hiring.</h1>
+        <p>
+          Built for <strong>university students, career changers, and working professionals</strong>. Master Python, SQL, Power BI, and AI workflows in zero-setup browser sandboxes—graduate with <strong>SHA-256 verified credentials</strong> and connect directly with hiring employers.
+        </p>
+        <div class="hero-btns">
+          <button class="btn btn-amber" onclick="openModal('learner')">Apply for 3-Month Internship / Training</button>
+          <a href="#toolkit" class="btn btn-outline">🎁 Claim Free Data Detective Kit</a>
+          <a href="#jobs" class="btn btn-outline">Recruiter: Advertise a Vacancy</a>
+        </div>
+        <div class="hero-note">
+          Open to learners, faculties & employers across Rwanda (UR, INES-Ruhengeri, IPRC, AUCA, ALU, Kepler) & global remote cohorts.
+        </div>
+      </div>
+
+      <div class="sandbox-card">
+        <div class="sandbox-top">
+          <div class="dots">
+            <span class="dot" style="background:#F43F5E;"></span>
+            <span class="dot" style="background:#FBBF24;"></span>
+            <span class="dot" style="background:#10B981;"></span>
+            <span style="margin-left:6px;">techyatch-lab.streamlit.app</span>
+          </div>
+          <span class="badge-live">LIVE SANDBOX</span>
+        </div>
+        <div style="font-size:12px; font-weight:700; color:var(--cyan-light); text-transform:uppercase; margin-bottom:4px;">Interactive Decision Simulation Preview</div>
+        <h3 style="font-size:18px; margin-bottom:6px;">Case 01: SME Margin & Inventory Leak Audit</h3>
+        <p style="font-size:13px; color:#CBD5E1;">Move the slider to simulate perishable waste reduction & automated scoring:</p>
+        <div class="sim-box">
+          <div class="sim-row">
+            <span style="color:#94A3B8;">Perishable Waste Reduction:</span>
+            <strong id="simVal" style="color:var(--amber-hover); font-family:monospace;">18%</strong>
+          </div>
+          <input type="range" min="5" max="35" value="18" class="sim-slider" oninput="updateSim(this.value)" />
+          <div class="sim-row" style="border-top:1px solid #1E293B; padding-top:8px; margin-bottom:0;">
+            <span style="color:#94A3B8;">Projected Annual Profit Recovery:</span>
+            <strong id="simProfit" style="color:#34D399; font-family:monospace;">+14,400,000 RWF</strong>
+          </div>
+        </div>
+        <div class="sha-bar">
+          <span>SHA-256: TVX-2026-9F8A2C...E41B</span>
+          <span style="color:#34D399; font-weight:700;">✔ Verified</span>
+        </div>
+        <a href="https://streamlit.app" target="_blank" rel="noopener" class="btn btn-cyan" style="width:100%;">Launch Full Cloud Sandbox →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUAL-TRACK PROGRAMS SECTION -->
+  <section id="programs">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag">Practical EdTech Pathways</span>
+        <h2>12-Week Applied Training & 3-Month Minimum Internships</h2>
+        <p>Open to <strong>university students, career changers, and working professionals</strong>. Train and complete supervised projects directly in your browser with zero expensive local hardware required.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div>
+            <span class="card-tag">TRACK 01 • 12 WEEKS • STUDENTS, CAREER CHANGERS & PROS</span>
+            <h3>12-Week Applied Data Science & Analytics Training</h3>
+            <p>Step-by-step cohort or self-paced training powered by our 3-series book methodology. Go from spreadsheet basics to predictive modeling and executive strategy.</p>
+            <ul class="check-list">
+              <li><strong>Weeks 1–4 (Foundations):</strong> Data cleaning, KPIs, Excel/SQL queries & visual storytelling.</li>
+              <li><strong>Weeks 5–8 (Applied Analytics):</strong> Python, Power BI/Tableau dashboards & 5-Case business simulations.</li>
+              <li><strong>Weeks 9–12 (AI & Strategy):</strong> Forecasting, churn modeling, Kinyarwanda/English NLP & capstone defense.</li>
+              <li><strong>Credential:</strong> Certificate of Applied Competence + <strong>SHA-256 Portfolio ID</strong>.</li>
+            </ul>
+          </div>
+          <button class="btn btn-navy" style="width:100%;" onclick="openModal('learner')">Enroll in 12-Week Applied Training →</button>
+        </div>
+
+        <div class="card card-featured">
+          <div>
+            <span class="card-tag card-tag-amber">TRACK 02 • 3 MONTHS MINIMUM • ACADEMIC & WORK EXPERIENCE</span>
+            <h3>Supervised Industrial Attachment & Internship (3+ Months)</h3>
+            <p>Structured <strong>3-month minimum (12+ weeks)</strong> practical attachment for university students, graduates, career changers, and professionals building verified work portfolios.</p>
+            <ul class="check-list">
+              <li><strong>Real Business & Clinical Projects:</strong> Deliver SME margin diagnostics, healthcare forecasting, or AI annotation workflows.</li>
+              <li><strong>UK-Trained MSc Supervision:</strong> Weekly technical mentorship, code reviews, and quantitative decision grading.</li>
+              <li><strong>University Logbook & Grading:</strong> Official supervisor sign-off and automated assessment reports for academic institutions.</li>
+              <li><strong>Direct Employer Pipeline:</strong> Priority listing in the <strong>Twevix Pulse™ Talent Directory</strong> upon completion.</li>
+            </ul>
+          </div>
+          <button class="btn btn-amber" style="width:100%;" onclick="openModal('learner')">Apply for 3-Month Internship / Attachment →</button>
+        </div>
+      </div>
+
+      <!-- FREE DATA DETECTIVE TOOLKIT EMAIL CAPTURE -->
+      <div id="toolkit" class="toolkit-banner">
+        <div class="toolkit-info">
+          <img src="techyatch-logo.png" alt="Data Detective Mascot" onerror="this.style.display='none'" />
+          <div>
+            <span class="card-tag card-tag-amber">🎁 FREE SERIES 1 COMPANION GIFT</span>
+            <h3 style="font-size:22px; margin-bottom:8px;">Claim Your Free "Data Detective Toolkit" (Series 1 Starter Bundle)</h3>
+            <p style="font-size:14px; color:#CBD5E1;">
+              Companion toolkit to <strong>Series 1: Understanding Data Analytics</strong>. Enter your email to unlock practice CSV datasets, interactive sandbox access for Cases 1–3, and our 1-page KPI & Profit Cheat Sheet.
+            </p>
+          </div>
+        </div>
+
+        <form class="toolkit-form" onsubmit="handleToolkitSubmit(event)">
+          <div class="form-row">
+            <input type="text" id="learnerName" class="input" required placeholder="Your Full Name" />
+            <select id="learnerRole" class="input">
+              <option value="Student">University Student</option>
+              <option value="Career Changer">Career Changer</option>
+              <option value="Professional">Working Professional</option>
+            </select>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <input type="email" id="learnerEmail" class="input" required placeholder="Enter your email address..." />
+            <button type="submit" class="btn btn-amber" style="white-space:nowrap;">Send Free Kit →</button>
+          </div>
+          <div id="toolkitMsg" style="display:none; margin-top:10px; font-size:13px; color:#6EE7B7; font-weight:600;">
+            ✔ Unlocked! <a href="https://streamlit.app" target="_blank" style="text-decoration:underline; color:#FBBF24;">Click here to open your Series 1 Data Detective Sandbox & CSVs →</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-SERIES BOOK SECTION -->
+  <section id="books" style="background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag" style="color:#D97706;">Official Lab Curriculum</span>
+        <h2>Simplifying Data Analytics to a Toddler (3-Series Book)</h2>
+        <p>Authored by <strong>Willa Abraham, MSc</strong> — pairing plain-English data mastery with live cloud simulations.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card" style="background:var(--slate-bg);">
+          <div>
+            <span class="card-tag">SERIES 01 • FOUNDATIONS</span>
+            <h3>Series 1: Understanding Data Analytics</h3>
+            <p>Demystifies data types, cleaning messy records, asking sharp business questions, and spotting patterns—built for beginners, students, and career changers.</p>
+          </div>
+          <a href="#toolkit" style="font-size:13px; font-weight:700; color:var(--cyan);">Includes Free Data Detective Kit ↑</a>
+        </div>
+
+        <div class="card" style="background:var(--slate-bg);">
+          <div>
+            <span class="card-tag">SERIES 02 • EXECUTION</span>
+            <h3>Series 2: Putting Data to Work</h3>
+            <p>Hands-on SQL querying, Python automation, BI dashboard design, and predictive forecasting models applied to real retail, clinical, and operational datasets.</p>
+          </div>
+          <a href="#programs" style="font-size:13px; font-weight:700; color:var(--cyan);">Core 12-Week Lab Textbook →</a>
+        </div>
+
+        <div class="card" style="background:var(--slate-bg);">
+
