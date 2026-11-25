@@ -296,7 +296,6 @@
           </div>
           <a href="#toolkit" style="font-size:13px; font-weight:700; color:var(--cyan);">Includes Free Data Detective Kit ↑</a>
         </div>
-
         <div class="card" style="background:var(--slate-bg);">
           <div>
             <span class="card-tag">SERIES 02 • EXECUTION</span>
@@ -307,4 +306,172 @@
         </div>
 
         <div class="card" style="background:var(--slate-bg);">
+          <div>
+            <span class="card-tag card-tag-amber">SERIES 03 • LEADERSHIP</span>
+            <h3>Series 3: Leading with Data and Strategy</h3>
+            <p>Equips managers, founders, and senior analysts to turn quantitative insights into 90-day profit turnarounds, AI governance, and executive boardroom decisions.</p>
+          </div>
+          <a href="https://twevix.com" target="_blank" style="font-size:13px; font-weight:700; color:var(--cyan);">Launch Diagnostic OS →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HRTECH JOB BOARD & RECRUITER PORTAL -->
+  <section id="jobs">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag">HRTech Hiring & Talent Marketplace</span>
+        <h2>TechYatch & Twevix Pulse™ Job Board</h2>
+        <p>Recruiters and employers advertise Data, AI, BI & 3-Month Internship vacancies directly to our SHA-256 verified talent pool.</p>
+      </div>
+
+      <div class="jobs-layout">
+        <div id="jobList">
+          <div class="job-card">
+            <div>
+              <span class="card-tag card-tag-amber">3-Month Internship / Attachment • Kigali / Hybrid</span>
+              <h3 style="font-size:18px; color:var(--navy); margin:4px 0;">Junior Data & Kinyarwanda NLP Annotator (Managed Micro-Squad)</h3>
+              <p style="font-size:13px; color:var(--text-muted);"><strong>Twevix Pulse™ Delivery Network</strong> • Python, NLP Tagging, Data QA</p>
+            </div>
+            <button class="btn btn-navy btn-sm" onclick="openModal('learner')">Apply with TVX- ID →</button>
+          </div>
+
+          <div class="job-card">
+            <div>
+              <span class="card-tag">Full-Time • Kigali, Rwanda</span>
+              <h3 style="font-size:18px; color:var(--navy); margin:4px 0;">Healthcare Operations & BI Data Analyst</h3>
+              <p style="font-size:13px; color:var(--text-muted);"><strong>Partner Polyclinic Network</strong> • SQL, Power BI, Patient Surge & Cold-Chain Audits</p>
+            </div>
+            <button class="btn btn-navy btn-sm" onclick="openModal('learner')">Apply Now →</button>
+          </div>
+
+          <div class="job-card">
+            <div>
+              <span class="card-tag">Contract / Remote • Musanze & Kigali</span>
+              <h3 style="font-size:18px; color:var(--navy); margin:4px 0;">SME Margin & Inventory Diagnostic Associate</h3>
+              <p style="font-size:13px; color:var(--text-muted);"><strong>Rwanda Agri & Retail Cooperative</strong> • Excel, Python, RFM Customer Retention</p>
+            </div>
+            <button class="btn btn-navy btn-sm" onclick="openModal('learner')">Apply Now →</button>
+          </div>
+        </div>
+
+        <div class="recruiter-box">
+          <span style="font-size:11px; font-weight:800; color:var(--amber-hover); text-transform:uppercase; letter-spacing:0.08em;">Recruiter & Employer Portal</span>
+          <h3 style="font-size:20px; margin:6px 0 10px;">Advertise a Job or Hire a Supervised Intern Squad</h3>
+          <p style="font-size:13px; color:#CBD5E1; margin-bottom:14px;">Post your Data Analyst, BI, Software, or 3-Month Internship opening directly to pre-vetted, SHA-256 verified candidates.</p>
+          <form onsubmit="addJobPost(event)">
+            <input type="text" id="jobTitle" class="input input-dark" required placeholder="Role Title (e.g. Junior SQL Analyst)" />
+            <input type="text" id="jobCompany" class="input input-dark" required placeholder="Company / Organization Name" />
+            <select id="jobType" class="input input-dark">
+              <option value="Full-Time">Full-Time</option>
+              <option value="3-Month Internship">Internship / Attachment (3+ Mo)</option>
+              <option value="Contract / Remote">Contract / Remote</option>
+            </select>
+            <input type="text" id="jobLocation" class="input input-dark" required placeholder="Location (e.g. Kigali / Musanze / Remote)" />
+            <input type="text" id="jobSkills" class="input input-dark" required placeholder="Key Skills (e.g. Python, SQL, Power BI)" />
+            <button type="submit" class="btn btn-amber" style="width:100%;">Publish Vacancy Live →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHA-256 CREDENTIAL VERIFIER -->
+  <section id="verify" class="verify-sec">
+    <div class="container">
+      <span class="sec-tag">Zero-Trust HRTech Verification</span>
+      <h2 style="font-size:26px; color:var(--navy); margin-bottom:8px;">Verify a Graduate's SHA-256 Credential ID</h2>
+      <p style="font-size:14px; color:var(--text-muted);">Employers and universities can validate any <code>TVX-</code> portfolio certificate instantaneously.</p>
+      <div class="verify-box">
+        <input type="text" id="credInput" class="input" placeholder="Enter ID (try: TVX-2026-DEMO)" />
+        <button class="btn btn-navy" onclick="verifyCredential()">Verify ID</button>
+      </div>
+      <div id="verifyResult" class="verify-result">
+        <strong>✔ Authentic TechYatch Lab™ Credential Verified</strong><br />
+        Track: 12-Week Applied Data Science & 3-Month Industrial Attachment<br />
+        Quantitative Decision Score: 92.4% (Distinction)<br />
+        <span style="font-family:monospace; font-size:11px;">SHA-256: 8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:#fff; font-size:14px;">TechYatch Lab™ — A Division of TWEVIX Z LTD (TIN: 157352094)</strong><br />
+        Kigali & Musanze, Rwanda • Tel / WhatsApp: +250 725 065 204 • Email: willa@techyatchlab.com
+      </div>
+      <div class="footer-links">
+        <a href="https://twevix.com" target="_blank">Twevix™</a>
+        <a href="https://twevix.com" target="_blank">Twevix Care™</a>
+        <a href="https://twevix.com" target="_blank">Twevix Pulse™</a>
+        <a href="https://twevix.com" target="_blank">Twevix Enterprise™</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- APPLICATION MODAL -->
+  <div id="actionModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 id="modalTitle" style="font-size:18px; color:var(--navy);">Apply for Training / 3-Month Internship</h3>
+        <button onclick="closeModal()" style="background:none; border:none; font-size:18px; cursor:pointer;">✕</button>
+      </div>
+      <form onsubmit="submitModal(event)">
+        <input type="text" class="input" required placeholder="Full Name / Organization Name" />
+        <input type="email" class="input" required placeholder="Email Address" />
+        <input type="tel" class="input" required placeholder="WhatsApp / Phone Number (+250...)" />
+        <select id="modalSelect" class="input">
+          <option>12-Week Applied Data Science Training (Student / Career Changer / Pro)</option>
+          <option>3-Month Minimum Industrial Attachment / Internship</option>
+          <option>University / Academic Faculty Partnership</option>
+          <option>Recruiter / Employer Job Posting & Talent Inquiry</option>
+        </select>
+        <textarea rows="3" class="input" placeholder="Tell us your background (University/Course, Career Goal, or Role Details)..."></textarea>
+        <button type="submit" class="btn btn-amber" style="width:100%;">Submit Application →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE SCRIPTS -->
+  <script>
+    function updateSim(val) {
+      document.getElementById('simVal').textContent = val + '%';
+      document.getElementById('simProfit').textContent = '+' + (val * 800000).toLocaleString() + ' RWF';
+    }
+    function handleToolkitSubmit(e) {
+      e.preventDefault();
+      document.getElementById('toolkitMsg').style.display = 'block';
+    }
+    function addJobPost(e) {
+      e.preventDefault();
+      const title = document.getElementById('jobTitle').value;
+      const company = document.getElementById('jobCompany').value;
+      const type = document.getElementById('jobType').value;
+      const loc = document.getElementById('jobLocation').value;
+      const skills = document.getElementById('jobSkills').value;
+      const card = document.createElement('div');
+      card.className = 'job-card';
+      card.style.border = '2px solid #F59E0B';
+      card.innerHTML = `
+        <div>
+          <span class="card-tag card-tag-amber">${type} • NEW • ${loc}</span>
+          <h3 style="font-size:18px; color:var(--navy); margin:4px 0;">${title}</h3>
+          <p style="font-size:13px; color:var(--text-muted);"><strong>${company}</strong> • ${skills}</p>
+        </div>
+        <button class="btn btn-navy btn-sm" onclick="openModal('learner')">Apply Now →</button>
+      `;
+      document.getElementById('jobList').prepend(card);
+      e.target.reset();
+    }
+    function verifyCredential() {
+      if (document.getElementById('credInput').value.trim().length > 2) {
+        document.getElementById('verifyResult').style.display = 'block';
+      }
+    }
+    function openModal(mode) {
+      document.getElementById('modalTitle').textContent = mode === 'recruiter'
+        ? 'Recruiter / Employer Hiring & Partnership'
 
