@@ -1,286 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TechYatch Lab™ | Applied Data &amp; AI Lab • Rwanda Industry Attachment</title>
-<link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechYatch Lab™ | Applied Data & AI Training, 3-Month Internships & Tech Hiring</title>
+  <meta name="description" content="Applied Data Science & Analytics Training, 3-Month Minimum Industrial Attachments, and Verified Tech Hiring in Rwanda & Remote — by TWEVIX Z LTD." />
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-section[id],div[id]{scroll-margin-top:85px}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#020617;color:#f8fafc;line-height:1.6}
-a{text-decoration:none;color:inherit}
-header{border-bottom:1px solid #1e293b;background:rgba(2,6,23,.95);position:sticky;top:0;z-index:50}
-.nav{width:100%;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
-.brand img{width:76px;height:76px;border-radius:14px;object-fit:cover;border:1.5px solid #34d399;background:transparent;padding:0}
-.mint{color:#34d399}
-.sub{font-size:11px;font-weight:500;color:#94a3b8;letter-spacing:.5px}
-.links{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;color:#cbd5e1}
-.links a:hover{color:#34d399}
-.pill-cta{background:#10b981;color:#020617!important;font-weight:700;padding:8px 18px;border-radius:999px}
-main{max-width:960px;margin:0 auto;padding:44px 24px}
-.hero{text-align:center;margin-bottom:44px}
-.badge{display:inline-block;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.35);color:#6ee7b7;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:6px 16px;border-radius:999px;margin-bottom:18px}
-h1{font-size:clamp(30px,5vw,46px);font-weight:800;line-height:1.15;margin-bottom:16px}
-.lead{color:#94a3b8;font-size:18px;max-width:700px;margin:0 auto 26px}
-.strip{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;max-width:760px;margin:0 auto 26px}
-.strip-card{flex:1;min-width:200px;background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:16px;text-align:center}
-.tabs{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-.tab{font-weight:700;font-size:15px;padding:12px 22px;border-radius:12px;border:2px solid transparent;cursor:pointer}
-.tab-biz{background:#10b981;color:#020617}
-.tab-lab{background:#fbbf24;color:#020617}
-.tab-trn{background:#38bdf8;color:#020617}
-.tab.active{border-color:#ffffff;box-shadow:0 0 20px rgba(255,255,255,.2)}
-.box{background:#0f172a;border:1px solid #1e293b;border-radius:16px;padding:28px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;text-align:left}
-.box-hi{border-color:rgba(52,211,153,.45)}
-.box-gift{background:linear-gradient(135deg,#1e293b 0%,#272112 55%,#0f2922 100%);border:2px solid #fbbf24;box-shadow:0 12px 36px rgba(251,191,36,.18)}
-.box-text{max-width:590px}
-.tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:4px 12px;border-radius:999px;margin-bottom:10px}
-.t-em{background:rgba(16,185,129,.15);color:#6ee7b7}
-.t-am{background:rgba(251,191,36,.15);color:#fcd34d}
-.t-sk{background:rgba(56,189,248,.15);color:#7dd3fc}
-.box h2,.box h3{font-size:22px;font-weight:700;margin-bottom:8px}
-.box p{color:#94a3b8;font-size:15px}
-.btn{display:inline-block;background:#1e293b;border:1px solid #334155;color:#f8fafc;font-weight:700;font-size:14px;padding:12px 22px;border-radius:12px;white-space:nowrap;cursor:pointer}
-.btn-em{background:#10b981;border-color:#10b981;color:#020617}
-.btn-am{background:#fbbf24;border-color:#fbbf24;color:#020617}
-.btn-sk{background:#38bdf8;border-color:#38bdf8;color:#020617}
-.btn:hover{opacity:.92}
-footer{border-top:1px solid #1e293b;padding:32px 24px;text-align:center;font-size:14px;color:#94a3b8}
-footer a{color:#34d399;font-weight:600}
-.ml-embedded, .ml-form-embedContainer, .ml-form-embedWrapper { width: 100% !important; max-width: 100% !important; background: transparent !important; box-shadow: none !important; }
-.ml-form-embedBody { padding: 0 !important; background: transparent !important; }
-.ml-form-horizontalRow { display: flex !important; gap: 12px !important; flex-wrap: wrap !important; }
-.ml-form-horizontalRow .ml-input-horizontal { flex: 1 !important; min-width: 200px !important; padding: 0 !important; }
-.ml-form-horizontalRow .ml-input-horizontal input { background: #020617 !important; border: 1px solid #334155 !important; color: #f8fafc !important; border-radius: 10px !important; padding: 12px 14px !important; }
-.ml-form-horizontalRow .ml-button-horizontal { width: auto !important; padding: 0 !important; }
-.ml-form-horizontalRow button { white-space: nowrap !important; padding: 12px 24px !important; border-radius: 10px !important; }
-</style>
+  <!-- Circular TY Monogram Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
 
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://mailerlite.com');
-    ml('account', '2818391');
-    if (window.location.search) { window.history.replaceState({}, document.title, window.location.pathname + window.location.hash); }
-</script>
-<!-- End MailerLite Universal -->
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://tailwindcss.com"></script>
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            navy: '#0B192C',
+            navyLight: '#132743',
+            tealBrand: '#1B6B73',
+            cyanAccent: '#0EA5E9',
+            goldAccent: '#F59E0B',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-<header>
-  <div class="nav">
-    <div class="brand">
-      <img src="logo.png" alt="TechYatch Lab Logo" />
-      <div>
-        <div>TechYatch <span class="mint">Lab™</span></div>
-        <div class="sub">APPLIED DATA &amp; AI LAB • RWANDA-WIDE SANDBOXES &amp; INTERNSHIPS</div>
+  <!-- STICKY TOP NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand Logo (Yacht + Mascot) -->
+      <a href="#" class="flex items-center space-x-3">
+        <img src="techyatch-logo.png" alt="TechYatch Lab Logo" class="h-10 w-auto bg-white rounded-lg px-1.5 py-1 shadow-sm object-contain" />
+        <div>
+          <span class="text-lg sm:text-xl font-extrabold tracking-tight text-white block leading-none">
+            TechYatch <span class="text-sky-400">Lab™</span>
+          </span>
+          <span class="text-[11px] text-slate-400">by TWEVIX Z LTD • Rwanda</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
+        <a href="#programs" class="hover:text-white transition">Training & 3-Mo Internships</a>
+        <a href="#toolkit" class="hover:text-amber-400 transition">Free Data Detective Kit</a>
+        <a href="#books" class="hover:text-white transition">Book Series</a>
+        <a href="#jobs" class="hover:text-white transition">Job Board & Recruiters</a>
+        <a href="#verify" class="hover:text-sky-400 transition">Verify SHA-256</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2.5">
+        <button onclick="openModal('recruiter')" class="hidden sm:inline-block text-xs font-semibold px-3.5 py-2 rounded-lg border border-slate-600 hover:border-sky-400 text-slate-200 transition">
+          Post a Job
+        </button>
+        <button onclick="openModal('learner')" class="text-xs sm:text-sm font-bold px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-navy transition shadow">
+          Apply Now
+        </button>
       </div>
     </div>
-    <div class="links">
-      <a href="#solutions">Lab Sandboxes</a>
-      <a href="#internship">Industry Attachment</a>
-      <a href="#employers">Hire Talent</a>
-      <a href="#starter-kit" class="pill-cta">Free Starter Kit →</a>
-    </div>
-  </div>
-</header>
+  </header>
 
-<main>
-  <section class="hero">
-    <div class="badge">TechYatch Lab™ (A Division of TWEVIX Z LTD) • Nationwide Rwanda</div>
-    <h1>Bridging Classroom Theory &amp; <span class="mint">Workplace Analytical Decisions</span></h1>
-    <p class="lead"><strong>TechYatch Lab™</strong> trains and supervises high-potential Data &amp; AI interns across Rwanda using zero-setup cloud sandboxes, automated quantitative evaluations, and real business deployments.</p>
+  <!-- HERO SECTION -->
+  <section class="bg-navy text-white pt-14 pb-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center">
+      <!-- Left Column -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center space-x-2 bg-navyLight border border-sky-500/30 rounded-full px-3.5 py-1.5 text-xs font-medium text-sky-300">
+          <span>🇷🇼 APPLIED EDTECH + HRTECH ECOSYSTEM • RWANDA & REMOTE</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          Applied Data & AI Training, <span class="text-sky-400">3-Month Internships</span> & Verified Tech Hiring.
+        </h1>
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+          Built for <strong>university students, career changers, and working professionals</strong>. Master Python, SQL, Power BI, and AI workflows in zero-setup browser sandboxes—graduate with <strong>SHA-256 verified credentials</strong> and connect directly with hiring employers.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <button onclick="openModal('learner')" class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-navy font-bold text-sm shadow-lg transition">
+            Apply for 3-Month Internship / Training
+          </button>
+          <a href="#toolkit" class="px-5 py-3 rounded-xl bg-navyLight hover:bg-slate-800 border border-sky-400/40 text-sky-300 font-semibold text-sm transition">
+            🎁 Claim Free Data Detective Kit
+          </a>
+          <a href="#jobs" class="px-5 py-3 rounded-xl border border-slate-600 hover:border-white text-white font-semibold text-sm transition">
+            Recruiter: Advertise a Vacancy
+          </a>
+        </div>
+        <p class="text-xs text-slate-400 pt-1">
+          Open to learners, faculties & employers across Rwanda (UR, INES-Ruhengeri, IPRC, AUCA, ALU, Kepler) & global remote cohorts.
+        </p>
+      </div>
 
-    <div class="strip">
-      <div class="strip-card">
-        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">☁️</div>
-        <div style="font-size:13px;font-weight:700;color:#34d399;">Zero-Setup Sandboxes</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Browser Python, SQL, BI &amp; NLP</div>
-      </div>
-      <div class="strip-card">
-        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">⚙️</div>
-        <div style="font-size:13px;font-weight:700;color:#fbbf24;">Automated Evaluation</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Quantitative Decision Grading</div>
-      </div>
-      <div class="strip-card">
-        <div style="font-size:46px;line-height:1.1;margin-bottom:8px;">🎓</div>
-        <div style="font-size:13px;font-weight:700;color:#38bdf8;">SHA-256 Credentials</div>
-        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">Tamper-Evident Portfolio Proof</div>
-      </div>
-    </div>
+      <!-- Right Column: Interactive Sandbox Preview -->
+      <div class="lg:col-span-5">
+        <div class="bg-navyLight border border-slate-700 rounded-2xl p-6 shadow-2xl space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-700 pb-3">
+            <div class="flex items-center space-x-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              <span class="text-xs font-mono text-slate-400 pl-2">techyatch-lab.streamlit.app</span>
+            </div>
+            <span class="text-[11px] font-mono bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded">LIVE SANDBOX</span>
+          </div>
 
-    <div class="tabs">
-      <button onclick="setMode('trn')" id="btn-trn" class="tab tab-trn active">🎓 12-Week Industry Attachment</button>
-      <button onclick="setMode('lab')" id="btn-lab" class="tab tab-lab">🕵 5-Case Simulation Lab</button>
-      <button onclick="setMode('biz')" id="btn-biz" class="tab tab-biz">🏢 Employer Micro-Squads</button>
-    </div>
+          <div class="space-y-3">
+            <p class="text-xs font-semibold uppercase tracking-wider text-sky-400">Interactive Decision Simulation Preview</p>
+            <h3 class="text-lg font-bold text-white">Case 01: SME Margin & Inventory Leak Audit</h3>
+            <p class="text-xs text-slate-300">Move the slider to simulate perishable waste reduction & automated scoring:</p>
+            <div class="bg-navy p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="flex justify-between text-xs">
+                <span class="text-slate-400">Perishable Waste Reduction:</span>
+                <span id="simVal" class="font-mono font-bold text-amber-400">18%</span>
+              </div>
+              <input id="simSlider" type="range" min="5" max="35" value="18" oninput="updateSim(this.value)" class="w-full accent-sky-400 cursor-pointer" />
+              <div class="flex justify-between text-xs pt-2 border-t border-slate-800">
+                <span class="text-slate-400">Projected Annual Profit Recovery:</span>
+                <span id="simProfit" class="font-mono font-bold text-emerald-400">+14,400,000 RWF</span>
+              </div>
+            </div>
 
-    <div class="box box-hi">
-      <div class="box-text">
-        <div id="box-tag" class="tag t-sk">01 • Rwanda-Wide Applied Data &amp; AI Cohort</div>
-        <h2 id="box-title">12-Week Practical Industrial Attachment (All Rwanda)</h2>
-        <p id="box-desc">Open to final-year Computer Science, IT, Statistics, Economics, and Agri-Data students across Rwanda (UR, INES-Ruhengeri, IPRC campuses, AUCA, ALU, Kepler &amp; partner institutions). Train in your browser and build real dashboards &amp; AI solutions.</p>
+            <div class="bg-slate-900/80 px-3 py-2 rounded-lg border border-slate-700 flex items-center justify-between">
+              <div class="flex items-center space-x-2 truncate">
+                <img src="favicon.png" alt="TY Seal" class="h-5 w-5 rounded-full bg-white p-0.5" />
+                <span class="text-[11px] font-mono text-slate-300 truncate">SHA-256: TVX-2026-9F8A2C...E41B</span>
+              </div>
+              <span class="text-[11px] font-semibold text-emerald-400">✔ Verified</span>
+            </div>
+          </div>
+
+          <a href="https://streamlit.app" target="_blank" rel="noopener" class="block w-full text-center py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-navy font-bold text-sm transition">
+            Launch Full Cloud Sandbox →
+          </a>
+        </div>
       </div>
-      <button type="button" id="box-action" onclick="openLabModal('student')" class="btn btn-sk">Apply for Attachment →</button>
     </div>
   </section>
 
-  <section id="starter-kit" class="box box-gift">
-    <div style="width:100%;">
-      <span class="tag t-am">🎁 Free Series 1 Reader &amp; Trainee Gift • Instant Access</span>
-      <h3>Claim Your Free "Data Detective Starter Kit"</h3>
-      <p style="margin-bottom:16px;">Unlock companion bundles, interactive sandbox access for Cases 1–3, practice CSVs, and a 1-page profit cheat sheet.</p>
-
-      <div class="ml-embedded" data-form="gsFm9Q"></div>
-    </div>
-  </section>
-
-    <section id="internship" class="box box-hi" style="display:block;">
-    <span class="tag t-sk">TechYatch Lab™ (A Division of TWEVIX Z LTD) • Applied Data &amp; AI Industry Attachment</span>
-    <h3 style="font-size:24px;margin-bottom:10px;">🎓 Bridging Classroom Theory &amp; Workplace Analytical Decisions in Rwanda</h3>
-    <p style="color:#cbd5e1;font-size:15px;margin-bottom:16px;">
-      Are you a final-year <strong>Computer Science, IT, Statistics, Economics, or Agri-Data</strong> student at any university or polytechnic across <strong>Rwanda</strong> (including <strong>University of Rwanda, INES-Ruhengeri, Rwanda Polytechnic / IPRC campuses, AUCA, ALU, and Kepler</strong>) looking for a hands-on industrial attachment? Join <strong>TechYatch Lab™</strong> for a 12-week practical Data &amp; AI program:
-    </p>
-
-    <ul style="list-style:none;margin-bottom:22px;display:grid;gap:12px;font-size:15px;color:#e2e8f0;">
-      <li>✅ <strong>Zero-Setup Cloud Sandboxes:</strong> Trainees analyze realistic commercial, hospitality, agricultural, and clinical scenarios directly in any browser—requiring zero local software installation from anywhere in Rwanda.</li>
-      <li>✅ <strong>Automated Quantitative Evaluation:</strong> Built-in decision assessments test business reasoning, margin analysis, and operational forecasting without manual grading bottlenecks.</li>
-      <li>✅ <strong>Verified Portfolio Credentials:</strong> Graduates earn tamper-evident <strong>SHA-256 credential IDs</strong> demonstrating job-ready analytical competence to Kigali &amp; global remote employers.</li>
-    </ul>
-
-    <button type="button" onclick="openLabModal('student')" class="btn btn-sk">Apply for Industry Attachment →</button>
-  </section>
-
-  <section id="employers" class="box" style="display:block;border-color:rgba(251,191,36,.45);">
-    <span class="tag t-am">For Employers &amp; Engineering Teams • Rwanda Delivery Network</span>
-    <h3 style="font-size:24px;margin-bottom:10px;">🏢 Deploy Supervised Data &amp; AI Interns or Managed Micro-Squads</h3>
-    <p style="color:#cbd5e1;font-size:15px;margin-bottom:16px;">
-      Hiring and training junior data analysts or AI data specialists takes significant time away from senior engineering teams. At <strong>TechYatch Lab™ (TWEVIX Z LTD)</strong>, we train and supervise high-potential Data &amp; AI interns across <strong>Rwanda</strong> so they are production-ready from day one:
-    </p>
-
-    <ul style="list-style:none;margin-bottom:20px;display:grid;gap:10px;font-size:15px;color:#e2e8f0;">
-      <li>📊 <strong>Data Analytics &amp; BI:</strong> Python, SQL, Excel/Power BI reporting, and automated data pipeline cleanup.</li>
-      <li>🤖 <strong>AI Data Operations:</strong> High-accuracy image/text annotation, <strong>Kinyarwanda / English NLP datasets</strong>, and LLM evaluation / RLHF.</li>
-      <li>🛡️ <strong>Technical Supervision &amp; Zero-Overhead Conversion:</strong> Every intern works under our dedicated technical supervision in Rwanda—giving you reliable output at a fraction of standard hiring overhead, with the option to hire top performers full-time after their internship.</li>
-    </ul>
-
-    <button type="button" onclick="openLabModal('employer')" class="btn btn-am">Submit a Role Vacancy / Request 15-Min Call →</button>
-  </section>
-
-  <section id="solutions">
-    <div class="box">
-      <div class="box-text">
-        <span class="tag t-am">02 • Interactive Decision Sandbox</span>
-        <h3>🕵 TechYatch Lab™ 5-Case Simulation Suite</h3>
-        <p>Manipulate live pricing, churn, inventory waste, and forecasting sliders directly in your browser with automated quantitative scoring and SHA-256 portfolio verification.</p>
-      </div>
-      <a id="lab-app-link" href="#" target="_blank" class="btn btn-am">Launch Lab App →</a>
+  <!-- DUAL-TRACK PROGRAMS SECTION -->
+  <section id="programs" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+      <span class="text-xs font-bold uppercase tracking-widest text-sky-600">Practical EdTech Pathways</span>
+      <h2 class="text-3xl font-extrabold text-navy">12-Week Applied Training & 3-Month Minimum Internships</h2>
+      <p class="text-slate-600 text-sm sm:text-base">
+        Open to <strong>university students, career changers, and working professionals</strong>. Train and complete supervised projects directly in your browser with zero expensive local hardware required.
+      </p>
     </div>
 
-   
-
-    <div class="box">
-      <div class="box-text">
-        <span class="tag t-em">Founder &amp; Lead Product Architect</span>
-        <h3>Willa Abraham • MSc Data Science for Business (University of Stirling, UK)</h3>
-        <p>Building scalable decision-intelligence software, zero-setup cloud sandboxes, and supervised applied Data &amp; AI training infrastructure across Rwanda.</p>
-      </div>
-      <a href="https://linkedin.com" target="_blank" class="btn">Connect on LinkedIn →</a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p><strong>TechYatch Lab™</strong> (A Division of <strong>TWEVIX Z LTD</strong>) • Kigali &amp; Musanze, Rwanda</p>
-  <p style="margin-top:6px;">
-    Direct Inquiries &amp; Partnerships: <a href="mailto:datadetective@techyatchlab.com">datadetective@techyatchlab.com</a>
-  </p>
-</footer>
-
-<div id="labModal" style="display:none;position:fixed;inset:0;background:rgba(2,6,23,.85);z-index:100;align-items:center;justify-content:center;padding:20px;">
-  <div style="background:#0f172a;border:1px solid #334155;border-radius:16px;max-width:500px;width:100%;padding:28px;position:relative;color:#f8fafc;">
-    <button type="button" onclick="closeLabModal()" style="position:absolute;top:16px;right:18px;background:none;border:none;color:#94a3b8;font-size:24px;cursor:pointer;">&times;</button>
-    <div id="modalTag" class="tag t-sk">TechYatch Lab™ Intake</div>
-    <h3 id="modalTitle" style="font-size:21px;margin-bottom:8px;">Apply for Industry Attachment</h3>
-    <p id="modalDesc" style="color:#94a3b8;font-size:14px;margin-bottom:18px;"></p>
-
-    <form id="labIntakeForm" onsubmit="submitLabIntake(event)" style="display:grid;gap:12px;">
-      <input type="text" id="intakeName" required placeholder="Full Name *" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;" />
-      <input type="email" id="intakeEmail" required placeholder="Email Address *" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;" />
-      <input type="text" id="intakeOrg" required placeholder="University, Campus & District (e.g., UR-CST Kigali) *" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;" />
-      <select id="intakeTrack" style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;"></select>
-      <textarea id="intakeNotes" rows="3" placeholder="Brief note on your availability, location in Rwanda, or project/role requirements..." style="background:#020617;border:1px solid #334155;color:#f8fafc;padding:12px 14px;border-radius:10px;font-size:14px;font-family:inherit;"></textarea>
-      <button type="submit" id="intakeSubmitBtn" class="btn btn-sk" style="width:100%;text-align:center;">Submit Application →</button>
-    </form>
-
-    <div id="intakeSuccess" style="display:none;background:rgba(16,185,129,.12);border:1px solid rgba(52,211,153,.4);border-radius:12px;padding:16px;margin-top:12px;font-size:14px;color:#a7f3d0;"></div>
-  </div>
-</div>
-
-<script>
-const ST_APP_URL = "https://techyatch-lab." + "streamlit.app/";
-const WEBHOOK_URL = "";
-
-document.getElementById("lab-app-link").href = ST_APP_URL;
-document.getElementById("diag-app-link").href = ST_APP_URL;
-
-const modes = {
-  trn: {
-    tag: "01 • Rwanda-Wide Applied Data & AI Cohort",
-    tagClass: "tag t-sk",
-    title: "12-Week Practical Industrial Attachment (All Rwanda)",
-    desc: "Open to final-year Computer Science, IT, Statistics, Economics, and Agri-Data students across Rwanda (UR, INES-Ruhengeri, IPRC campuses, AUCA, ALU, Kepler & partner institutions). Train in your browser and build real dashboards & AI solutions.",
-    btnText: "Apply for Attachment →",
-    btnClass: "btn btn-sk",
-    action: () => openLabModal("student")
-  },
-  lab: {
-    tag: "02 • Zero-Setup Cloud Sandboxes",
-    tagClass: "tag t-am",
-    title: "5-Case Interactive Decision & Simulation Lab",
-    desc: "Analyze commercial, hospitality, agricultural, and clinical scenarios right in your browser with automated quantitative evaluation and tamper-evident SHA-256 credentials.",
-    btnText: "Launch Cloud Sandbox →",
-    btnClass: "btn btn-am",
-    action: () => window.open(ST_APP_URL, "_blank")
-  },
-  biz: {
-    tag: "03 • Supervised Remote Squads & Hiring",
-    tagClass: "tag t-em",
-    title: "Deploy Rwanda Data & AI Micro-Squads or Post a Vacancy",
-    desc: "Offload Python/SQL/Power BI reporting, Kinyarwanda/English NLP annotation, and LLM evaluation to supervised interns across Rwanda—with full-time conversion options.",
-    btnText: "Request Squad / Post Role →",
-    btnClass: "btn btn-em",
-    action: () => openLabModal("employer")
-  }
-};
-
-function setMode(mode) {
-  const m = modes[mode];
-  const tagEl = document.getElementById("box-tag");
-  tagEl.textContent = m.tag;
-  tagEl.className = m.tagClass;
-  document.getElementById("box-title").textContent = m.title;
-  document.getElementById("box-desc").textContent = m.desc;
-
-  const actionBtn = document.getElementById("box-action");
-  actionBtn.textContent = m.btnText;
-  actionBtn.className = m.btnClass;
-  actionBtn.onclick = m.action;
-
-  document.querySelectorAll(".tab").forEach(btn => btn.classList.remove("active"));
-  document.getElementById("btn-" + mode).classList.add("active");
-}
-
-let currentIntakeType = "student";
-
-function openLabModal(type) {
-  currentIntakeType = type;
-  const modal = document.getElementById("labModal");
-  const tag = document.getElementById("modalTag");
-  const title = document.getElementById("modalTitle");
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Track 1: 12-Week Applied Training -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-7 shadow-sm flex flex-col justify-between">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">TRACK 01 • 12 WEEKS</span>
+            <span class="text-xs font-semibold text-slate-500">Students • Career Changers • Pros</span>
+          </div>
+          <h3 class="text-2xl font-bold text-navy">12-Week Applied Data Science & Analytics Training</h3>
+          <p class="text-sm text-slate-600">
+            Step-by-step cohort or self-paced training powered by our 3-volume book methodology. Go from spreadsheet fundamentals to predictive modeling and executive strategy.
