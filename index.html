@@ -274,23 +274,30 @@
           </div>
         </div>
 
-                    <form class="toolkit-form" onsubmit="submitToMailerLite(event)">
+                   <iframe name="hidden_ml_iframe" id="hidden_ml_iframe" style="display:none;"></iframe>
+
+        <form class="toolkit-form" action="https://mailerlite.com" method="GET" target="hidden_ml_iframe" onsubmit="document.getElementById('toolkitMsg').style.display='block';">
+          <input type="hidden" name="ml-submit" value="1" />
+          <input type="hidden" name="anticsrf" value="true" />
+          <input type="hidden" name="ajax" value="1" />
+
           <div class="form-row">
-            <input type="text" id="mlName" class="input" required placeholder="Your Full Name" />
-            <select id="mlCategory" class="input">
+            <input type="text" name="fields[name]" class="input" required placeholder="Your Full Name" />
+            <select name="fields[company]" class="input">
               <option value="University Student">University Student</option>
               <option value="Career Changer">Career Changer</option>
               <option value="Working Professional">Working Professional</option>
             </select>
           </div>
           <div style="display:flex; gap:8px;">
-            <input type="email" id="mlEmail" class="input" required placeholder="Enter your email address..." />
-            <button type="submit" id="mlBtn" class="btn btn-amber" style="white-space:nowrap;">Send Free Kit →</button>
+            <input type="email" name="fields[email]" class="input" required placeholder="Enter your email address..." />
+            <button type="submit" class="btn btn-amber" style="white-space:nowrap;">Send Free Kit →</button>
           </div>
           <div id="toolkitMsg" style="display:none; margin-top:10px; font-size:13px; color:#6EE7B7; font-weight:600;">
             ✔ Sent! Check your inbox to confirm your email & unlock your Series 1 Data Detective Toolkit.
           </div>
         </form>
+
 
 
       </div>
