@@ -274,24 +274,26 @@
           </div>
         </div>
 
-                        <iframe name="hidden_ml_iframe" id="hidden_ml_iframe" style="display:none;"></iframe>
-
-        <form class="toolkit-form" action="https://mailerlite.com" method="POST" target="hidden_ml_iframe" onsubmit="document.getElementById('toolkitMsg').style.display='block';">
-
-          <input type="hidden" name="ml-submit" value="1" />
-          <input type="hidden" name="anticsrf" value="true" />
+          <form class="toolkit-form" action="https://formsubmit.co" method="POST">
+          <input type="hidden" name="_subject" value="🎁 New Series 1 Data Detective Toolkit Lead!" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_autoresponse" value="Welcome to TechYatch Lab™! Access your Series 1 Data Detective Sandbox & Practice Datasets here: https://streamlit.app" />
+          <input type="hidden" name="_next" value="https://techyatchlab.com" />
 
           <div class="form-row">
-            <input type="text" name="fields[name]" class="input" required placeholder="Your Full Name" />
-            <select class="input">
+            <input type="text" name="Full_Name" class="input" required placeholder="Your Full Name" />
+            <select name="Learner_Category" class="input">
               <option value="University Student">University Student</option>
               <option value="Career Changer">Career Changer</option>
               <option value="Working Professional">Working Professional</option>
             </select>
           </div>
           <div style="display:flex; gap:8px;">
-            <input type="email" name="fields[email]" class="input" required placeholder="Enter your email address..." />
+            <input type="email" name="email" class="input" required placeholder="Enter your email address..." />
             <button type="submit" class="btn btn-amber" style="white-space:nowrap;">Send Free Kit →</button>
+          </div>
+        </form>
+
           </div>
           <div id="toolkitMsg" style="display:none; margin-top:10px; font-size:13px; color:#6EE7B7; font-weight:600;">
             ✔ Almost there! Check your inbox & click the confirmation link to unlock your Series 1 Data Detective Kit.
