@@ -28,14 +28,15 @@
     /* NAVBAR */
     header { position: sticky; top: 0; z-index: 100; background: rgba(11, 25, 44, 0.97); color: #fff; border-bottom: 1px solid #1E293B; }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img { height: 42px; width: auto; background: #fff; border-radius: 8px; padding: 3px; object-fit: contain; }
-    .brand-title { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; display: block; line-height: 1.1; }
+       .brand { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+    .brand img { height: 40px; width: auto; background: #fff; border-radius: 8px; padding: 3px; object-fit: contain; }
+    .brand-title { font-size: 18px; font-weight: 800; letter-spacing: -0.02em; display: block; line-height: 1.1; }
     .brand-title span { color: var(--cyan-light); }
-    .brand-sub { font-size: 11px; color: #94A3B8; }
-    .nav-links { display: flex; gap: 22px; font-size: 14px; font-weight: 500; color: #CBD5E1; }
+    .brand-sub { font-size: 10px; color: #94A3B8; display: block; }
+    .nav-links { display: flex; gap: 16px; font-size: 13px; font-weight: 500; color: #CBD5E1; white-space: nowrap; }
     .nav-links a:hover { color: #fff; }
-    .nav-actions { display: flex; gap: 10px; align-items: center; }
+    .nav-actions { display: flex; gap: 8px; align-items: center; white-space: nowrap; }
+
 
     /* BUTTONS */
     .btn { display: inline-block; padding: 11px 18px; border-radius: 10px; font-weight: 700; font-size: 14px; cursor: pointer; border: none; transition: 0.2s; text-align: center; }
